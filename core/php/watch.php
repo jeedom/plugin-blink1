@@ -24,4 +24,9 @@ if (trim(config::byKey('api')) == '') {
 		}
 
 		echo $blink1->getConfiguration('watchData');
+
+		if($blink1->getConfiguration('doNoRepeatCommand') == 1){
+			$blink1->setConfiguration('watchData','');
+			$blink1->save();
+		}
 		?>

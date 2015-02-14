@@ -15,6 +15,32 @@
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
 
+ $("#table_cmd").sortable({axis: "y", cursor: "move", items: ".cmd", placeholder: "ui-state-highlight", tolerance: "intersect", forcePlaceholderSize: true});
+
+ $('#bt_syncPattern').on('click',function(){
+$.ajax({// fonction permettant de faire de l'ajax
+        type: "POST", // méthode de transmission des données au fichier php
+        url: "plugins/blink1/core/ajax/blink1.ajax.php", // url du fichier php
+        data: {
+            action: "syncPattern",
+            id: $('.eqLogicAttr[data-l1key=id]').value(),
+        },
+        dataType: 'json',
+        global: false,
+        error: function (request, status, error) {
+            handleAjaxError(request, status, error);
+        },
+        success: function (data) { // si l'appel a bien fonctionné
+        if (data.state != 'ok') {
+            $('#div_alert').showAlert({message: data.result, level: 'danger'});
+            return;
+        }
+        window.location.href = 'index.php?v=d&p=blink1&m=blink1&id='+$('.eqLogicAttr[data-l1key=id]').value();
+    }
+});
+});
+
+
  function printEqLogic(_eqLogic){
     $('#span_watchUrl').append(wathUrl+'&id='+_eqLogic.id);
 }
@@ -44,6 +70,9 @@
         tr += '<input class="cmdAttr form-control input-sm" data-l1key="logicalId" style="display : none;" value="patern">';
         tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="patern" style="width : 180px;" placeholder="{{Nom du patern}}">';
     }
+    tr += '</td>';
+    tr += '<td>';
+    tr += '<span><input type="checkbox" class="cmdAttr" data-l1key="isVisible" checked/> {{Afficher}}<br/></span>';
     tr += '</td>';
     tr += '<td>';
     if (is_numeric(_cmd.id)) {

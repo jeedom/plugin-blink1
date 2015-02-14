@@ -36,17 +36,44 @@ class blink1 extends eqLogic {
       $colorAll = new blink1Cmd();
       $colorAll->setName(__('Couleur',__FILE__));
       $colorAll->setIsVisible(1);
+      $colorAll->setOrder(-1);
     }
     $colorAll->setLogicalId('colorAll');
     $colorAll->setType('action');
     $colorAll->setSubType('color');
     $colorAll->setEqlogic_id($this->getId());
     $colorAll->save();
-
-
   }
 
-  /*     * **********************Getteur Setteur*************************** */
+  public function syncPatern(){
+    $url = 'http://'.$this->getConfiguration('address').':'.$this->getConfiguration('port').'/blink1/pattern';
+    $request_http = new com_http($url);
+    $patterns = json_decode($request_http->exec(),true);
+
+    if(is_array($patterns)){
+      foreach ($patterns['patterns'] as $pattern) {
+        $find = false;
+        foreach ($this->getCmd(null,'patern',null,true) as $cmd) {
+         if($cmd->getConfiguration('patern') == $pattern['name']){
+          $find = true;
+        }
+      }
+      if(!$find){
+        $paternCmd = new blink1Cmd();
+        $paternCmd->setName(__($pattern['name'],__FILE__));
+        $paternCmd->setIsVisible(1);
+        $paternCmd->setLogicalId('patern');
+        $paternCmd->setType('action');
+        $paternCmd->setSubType('other');
+        $paternCmd->setEqlogic_id($this->getId());
+        $paternCmd->setConfiguration('patern',$pattern['name']);
+        $paternCmd->save();
+      }
+    }
+  }
+}
+
+/*     * **********************Getteur Setteur*************************** */
 }
 
 class blink1Cmd extends cmd {
