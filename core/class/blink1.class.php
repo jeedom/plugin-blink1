@@ -102,7 +102,7 @@ class blink1Cmd extends cmd {
         $watchData = json_encode(array('pattern' => $this->getConfiguration('patern')));
       }
       $eqLogic->setConfiguration('watchData',$watchData);
-      $eqLogic->save();
+
     }
 
     if($eqLogic->getConfiguration('mode') == 'internal' || $eqLogic->getConfiguration('mode') == 'both'){
@@ -115,10 +115,20 @@ class blink1Cmd extends cmd {
       }
       $request_http = new com_http($url);
       $request_http->exec();
+      if($eqLogic->getConfiguration('mode') == 'both' && $eqLogic->getConfiguration('doNoRepeatCommand') == 1){
+        $eqLogic->setConfiguration('watchData','');
+      }
     }
-  }
 
-  /*     * **********************Getteur Setteur*************************** */
+    if($eqLogic->getConfiguration('mode') == 'watch' || $eqLogic->getConfiguration('mode') == 'both'){
+     $eqLogic->save();
+   }
+ }
+
+
+
+
+ /*     * **********************Getteur Setteur*************************** */
 }
 
 ?>

@@ -47,7 +47,7 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
 
         <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
             <div class="row">
-               <div class="col-sm-6" >
+             <div class="col-sm-6" >
                 <form class="form-horizontal">
                     <fieldset>
                         <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
@@ -107,8 +107,8 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
                 </form>
             </div>
             <div class="col-sm-6" >
-               <legend>Configuration</legend>
-               <form class="form-horizontal">
+             <legend>Configuration</legend>
+             <form class="form-horizontal">
                 <fieldset>
                     <div class="form-group">
                         <label class="col-sm-5 control-label">{{Ne pas repeter les commandes}}</label>
@@ -119,24 +119,25 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
                     <div class="form-group">
                         <label class="col-sm-5 control-label">{{Patern}}</label>
                         <div class="col-sm-3">
-                        <a class="btn btn-default" id="bt_syncPattern"><i class="fa fa-exchange"></i> {{Synchroniser}}</a>
+                            <a class="btn btn-default" id="bt_syncPattern"><i class="fa fa-exchange"></i> {{Synchroniser}}</a>
                         </div>
                     </div>
                 </fieldset> 
             </form>
         </div>
+    </div>
 
-        <form class="form-horizontal">
-            <fieldset>
-              <div class="form-group">
-                <label class="col-lg-3 control-label">{{URL à surveiller}}</label>
-                <div class="col-lg-9">
-                    <span id="span_watchUrl"></span>
-                </div>
+    <form class="form-horizontal">
+        <fieldset>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">{{URL à surveiller}}</label>
+            <div class="col-lg-9">
+                <span id="span_watchUrl"></span>
             </div>
-        </fieldset> 
-    </form>
-</div>
+        </div>
+    </fieldset> 
+</form>
+
 
 <legend>{{Commandes}}</legend>
 <a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande patern}}</a><br/><br/>
