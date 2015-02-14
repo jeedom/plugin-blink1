@@ -17,6 +17,11 @@
 
  $("#table_cmd").sortable({axis: "y", cursor: "move", items: ".cmd", placeholder: "ui-state-highlight", tolerance: "intersect", forcePlaceholderSize: true});
 
+ $('.eqLogicAttr[data-l1key=configuration][data-l2key=mode]').on('change',function(){
+    $('.mode').hide();
+    $('.mode.'+$(this).value()).show();
+});
+
  $('#bt_syncPattern').on('click',function(){
 $.ajax({// fonction permettant de faire de l'ajax
         type: "POST", // méthode de transmission des données au fichier php
