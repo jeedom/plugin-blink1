@@ -11,7 +11,7 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
     <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="bs-sidebar">
             <ul id="ul_eqLogic" class="nav nav-list bs-sidenav">
-                <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une blink1}}</a>
+                <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une blink(1)}</a>
                 <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
                 <?php
                 foreach ($eqLogics as $eqLogic) {
@@ -23,11 +23,11 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
     </div>
 
     <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
-        <legend>{{Mes blink1}}
+        <legend>{{Mes blink(1)}}
         </legend>
         <?php
         if (count($eqLogics) == 0) {
-            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de blink1, cliquez sur Ajouter un blink1 pour commencer}}</span></center>";
+            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de blink(1), cliquez sur Ajouter un blink(1) pour commencer}}</span></center>";
         } else {
             ?>
             <div class="eqLogicThumbnailContainer">
@@ -52,10 +52,10 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
                     <fieldset>
                         <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">{{Nom de l'équipement blink1}}</label>
+                            <label class="col-sm-3 control-label">{{Nom de l'équipement blink(1)}}</label>
                             <div class="col-sm-6">
                                 <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-                                <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement blink1}}"/>
+                                <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement blink(1)}}"/>
                             </div>
                         </div>
                         <div class="form-group">
@@ -86,7 +86,7 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
                             <div class="col-sm-6">
                                 <select type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="mode">
                                    <option value="both">{{Les deux}}</option>
-                                   <option value="internal">{{Appels à l'api blink (1)}}</option>
+                                   <option value="internal">{{Appels à l'api blink(1)}}</option>
                                    <option value="watch">{{Surveillance par url}}</option>
                                </select>
                            </div>
@@ -111,13 +111,13 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
            <form class="form-horizontal">
             <fieldset>
                 <div class="form-group mode both watch">
-                    <label class="col-sm-5 control-label">{{Ne pas repeter les commandes}}</label>
+                    <label class="col-sm-5 control-label">{{Ne pas répéter les commandes}}</label>
                     <div class="col-sm-3">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
                     </div>
                 </div>
                 <div class="form-group mode both internal">
-                    <label class="col-sm-5 control-label">{{Patern}}</label>
+                    <label class="col-sm-5 control-label">{{Pattern}}</label>
                     <div class="col-sm-3">
                         <a class="btn btn-default" id="bt_syncPattern"><i class="fa fa-exchange"></i> {{Synchroniser}}</a>
                     </div>
@@ -139,13 +139,13 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
 
 
 <legend>{{Commandes}}</legend>
-<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande patern}}</a><br/><br/>
+<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande pattern}}</a><br/><br/>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
             <th style="width : 200px;">{{Nom}}</th>
             <th style="width : 200px;">{{Type}}</th>
-            <th>{{Parametres}}</th>
+            <th>{{Paramètres}}</th>
             <th>{{Options}}</th>
             <th style="width : 200px;">{{Action}}</th>
         </tr>
