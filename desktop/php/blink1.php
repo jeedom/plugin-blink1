@@ -92,7 +92,7 @@ sendVarToJS('wathUrl',config::byKey('externalProtocol') .config::byKey('external
                            </div>
                        </div>
                        <div class="form-group mode both internal">
-                        <label class="col-sm-3 control-label">{{Addresse ou ip}}</label>
+                        <label class="col-sm-3 control-label">{{Adresse ou ip}}</label>
                         <div class="col-sm-6">
                             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="address"/>
                         </div>
