@@ -20,31 +20,31 @@ require_once dirname(__FILE__) . '/../../../core/php/core.inc.php';
 
 function blink1_install() {
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-x86_64';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-armv6l';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-armv7l';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 }
 
 function blink1_update() {
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-x86_64';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-armv6l';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 	$command = dirname(__FILE__) . '/../resources/blink1-tool-armv7l';
-	if(file_exists($command)){
-		shell_exec('chmod +x '.$command)
+	if (file_exists($command)) {
+		shell_exec('chmod +x ' . $command);
 	}
 }
 
