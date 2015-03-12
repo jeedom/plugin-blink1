@@ -73,7 +73,7 @@ $.ajax({// fonction permettant de faire de l'ajax
     tr += '<td>';
     if(!isset(_cmd.logicalId) || _cmd.logicalId == '' || _cmd.logicalId == 'patern'){
         tr += '<input class="cmdAttr form-control input-sm" data-l1key="logicalId" style="display : none;" value="patern">';
-        tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="patern" style="width : 180px;" placeholder="{{Nom du patern}}">';
+        tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="patern" style="width : 180px;" placeholder="{{Nom du pattern}}">';
     }
     tr += '</td>';
     tr += '<td>';

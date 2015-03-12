@@ -11,7 +11,7 @@ sendVarToJS('wathUrl', config::byKey('externalProtocol') . config::byKey('extern
     <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="bs-sidebar">
             <ul id="ul_eqLogic" class="nav nav-list bs-sidenav">
-                <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une blink1}}</a>
+                <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une blink(1)}}</a>
                 <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
                 <?php
 foreach ($eqLogics as $eqLogic) {
@@ -21,7 +21,6 @@ foreach ($eqLogics as $eqLogic) {
            </ul>
        </div>
    </div>
-
    <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
     <legend>{{Mes blink1}}
     </legend>
@@ -154,13 +153,13 @@ foreach (object::all() as $object) {
 
 
 <legend>{{Commandes}}</legend>
-<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande patern}}</a><br/><br/>
+<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande pattern}}</a><br/><br/>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
             <th style="width : 200px;">{{Nom}}</th>
             <th style="width : 200px;">{{Type}}</th>
-            <th>{{Parametres}}</th>
+            <th>{{Paramètres}}</th>
             <th>{{Options}}</th>
             <th style="width : 200px;">{{Action}}</th>
         </tr>
