@@ -121,7 +121,7 @@ class blink1Cmd extends cmd {
 		if ($eqLogic->getConfiguration('mode') == 'ssh') {
 			$command = './blink1-tool ';
 			if ($this->getLogicalId() == 'colorAll') {
-				$command = '--rgb ' . $_options['color'];
+				$command .= '--rgb ' . $_options['color'];
 			}
 			$request_shell = new com_shell('ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$request_shell->exec();
@@ -135,7 +135,7 @@ class blink1Cmd extends cmd {
 			}
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {
-				$command = '--rgb ' . $_options['color'];
+				$command .= '--rgb ' . $_options['color'];
 			}
 			$request_shell = new com_shell('sudo ' . $command . ' 2>&1');
 			$request_shell->exec();
