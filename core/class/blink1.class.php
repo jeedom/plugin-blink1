@@ -119,9 +119,11 @@ class blink1Cmd extends cmd {
 		}
 
 		if ($eqLogic->getConfiguration('mode') == 'ssh') {
-			$command = './blink1-tool ';
+			$command = $eqLogic->getConfiguration('pathtoblink1', './blink1-tool ');
 			if ($this->getLogicalId() == 'colorAll') {
 				$command .= '--rgb ' . str_replace('#', '', $_options['color']);
+			} else {
+				$command .= $this->getConfiguration('patern');
 			}
 			log::add('blink1', 'debug', 'ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$request_shell = new com_shell('ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
@@ -134,6 +136,8 @@ class blink1Cmd extends cmd {
 			$uname = posix_uname();
 			if (!file_exists($command . $uname['machine'])) {
 				throw new Exception(__('Aucune exécutable trouvé pour l\'architecture : ', __FILE__) . $command . $uname['machine']);
+			} else {
+				$command .= $this->getConfiguration('patern');
 			}
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {

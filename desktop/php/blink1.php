@@ -124,6 +124,12 @@ foreach (object::all() as $object) {
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="username"/>
         </div>
     </div>
+     <div class="form-group mode ssh">
+        <label class="col-sm-3 control-label">{{Chemin de l'éxecutable blink1}}</label>
+        <div class="col-sm-6">
+            <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pathtoblink1" value="./blink1-tool"/>
+        </div>
+    </div>
     <div class="form-group mode both watch">
         <label class="col-sm-5 control-label">{{Ne pas repeter les commandes}}</label>
         <div class="col-sm-3">
