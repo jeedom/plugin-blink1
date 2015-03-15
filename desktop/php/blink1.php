@@ -159,7 +159,7 @@ foreach (object::all() as $object) {
 
 
 <legend>{{Commandes}}</legend>
-<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande pattern}}</a><br/><br/>
+<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande / un pattern}}</a><br/><br/>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
