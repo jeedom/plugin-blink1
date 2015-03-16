@@ -22,11 +22,11 @@ foreach ($eqLogics as $eqLogic) {
        </div>
    </div>
    <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
-    <legend>{{Mes blink1}}
+    <legend>{{Mes clés blink(1)}}
     </legend>
     <?php
 if (count($eqLogics) == 0) {
-	echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de blink1, cliquez sur Ajouter un blink1 pour commencer}}</span></center>";
+	echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de clé blink(1), cliquez sur Ajouter une clé blink(1) pour commencer}}</span></center>";
 } else {
 	?>
        <div class="eqLogicThumbnailContainer">
@@ -51,10 +51,10 @@ foreach ($eqLogics as $eqLogic) {
             <fieldset>
                 <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
                 <div class="form-group">
-                    <label class="col-sm-3 control-label">{{Nom de l'équipement blink1}}</label>
+                    <label class="col-sm-3 control-label">{{Nom de l'équipement blink(1)}}</label>
                     <div class="col-sm-6">
                         <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-                        <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement blink1}}"/>
+                        <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement blink(1)}}"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -85,8 +85,8 @@ foreach (object::all() as $object) {
                 <div class="col-sm-6">
                     <select type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="mode">
                      <option value="both">{{Les deux}}</option>
-                     <option value="internal">{{Appels à l'api blink (1)}}</option>
-                     <option value="watch">{{Surveillance par url}}</option>
+                     <option value="internal">{{Appels à l'API blink(1)}}</option>
+                     <option value="watch">{{Surveillance par URL}}</option>
                      <option value="ssh">{{SSH}}</option>
                      <option value="local">{{Local}}</option>
                  </select>
@@ -101,7 +101,7 @@ foreach (object::all() as $object) {
  <form class="form-horizontal">
     <fieldset>
        <div class="form-group mode both internal">
-        <label class="col-sm-3 control-label">{{Addresse ou ip}}</label>
+        <label class="col-sm-3 control-label">{{Adresse ou IP}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="address"/>
         </div>
@@ -113,7 +113,7 @@ foreach (object::all() as $object) {
         </div>
     </div>
     <div class="form-group mode ssh">
-        <label class="col-sm-3 control-label">{{Addresse ou ip}}</label>
+        <label class="col-sm-3 control-label">{{Adresse ou IP}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="host"/>
         </div>
@@ -125,19 +125,19 @@ foreach (object::all() as $object) {
         </div>
     </div>
      <div class="form-group mode ssh">
-        <label class="col-sm-3 control-label">{{Chemin de l'éxecutable blink1}}</label>
+        <label class="col-sm-3 control-label">{{Chemin relatif de l'exécutable blink1-tool}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pathtoblink1" value="./blink1-tool"/>
         </div>
     </div>
     <div class="form-group mode both watch">
-        <label class="col-sm-5 control-label">{{Ne pas repeter les commandes}}</label>
+        <label class="col-sm-5 control-label">{{Ne pas répéter les commandes}}</label>
         <div class="col-sm-3">
             <input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
         </div>
     </div>
     <div class="form-group mode both internal">
-        <label class="col-sm-5 control-label">{{Patern}}</label>
+        <label class="col-sm-5 control-label">{{Pattern}}</label>
         <div class="col-sm-3">
             <a class="btn btn-default" id="bt_syncPattern"><i class="fa fa-exchange"></i> {{Synchroniser}}</a>
         </div>
