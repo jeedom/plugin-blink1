@@ -22,7 +22,7 @@ require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 class blink1 extends eqLogic {
 	/*     * *************************Attributs****************************** */
 
-	/*     * ***********************Methode static*************************** */
+	/*     * ***********************Méthodes statiques*************************** */
 
 	/*     * *********************Méthodes d'instance************************* */
 
@@ -41,7 +41,7 @@ class blink1 extends eqLogic {
 		$colorAll->save();
 	}
 
-	public function syncPatern() {
+	public function syncPattern() {
 		$url = 'http://' . $this->getConfiguration('address') . ':' . $this->getConfiguration('port') . '/blink1/pattern';
 		$request_http = new com_http($url);
 		$patterns = json_decode($request_http->exec(), true);
@@ -49,21 +49,21 @@ class blink1 extends eqLogic {
 		if (is_array($patterns)) {
 			foreach ($patterns['patterns'] as $pattern) {
 				$find = false;
-				foreach ($this->getCmd(null, 'patern', null, true) as $cmd) {
-					if ($cmd->getConfiguration('patern') == $pattern['name']) {
+				foreach ($this->getCmd(null, 'pattern', null, true) as $cmd) {
+					if ($cmd->getConfiguration('pattern') == $pattern['name']) {
 						$find = true;
 					}
 				}
 				if (!$find) {
-					$paternCmd = new blink1Cmd();
-					$paternCmd->setName(__($pattern['name'], __FILE__));
-					$paternCmd->setIsVisible(1);
-					$paternCmd->setLogicalId('patern');
-					$paternCmd->setType('action');
-					$paternCmd->setSubType('other');
-					$paternCmd->setEqlogic_id($this->getId());
-					$paternCmd->setConfiguration('patern', $pattern['name']);
-					$paternCmd->save();
+					$patternCmd = new blink1Cmd();
+					$patternCmd->setName(__($pattern['name'], __FILE__));
+					$patternCmd->setIsVisible(1);
+					$patternCmd->setLogicalId('pattern');
+					$patternCmd->setType('action');
+					$patternCmd->setSubType('other');
+					$patternCmd->setEqlogic_id($this->getId());
+					$patternCmd->setConfiguration('pattern', $pattern['name']);
+					$patternCmd->save();
 				}
 			}
 		}
@@ -75,9 +75,9 @@ class blink1 extends eqLogic {
 class blink1Cmd extends cmd {
 	/*     * *************************Attributs****************************** */
 
-	/*     * ***********************Methode static*************************** */
+	/*     * ***********************Méthodes statiques*************************** */
 
-	/*     * *********************Methode d'instance************************* */
+	/*     * *********************Méthodes d'instance************************* */
 
 	public function dontRemoveCmd() {
 		if ($this->getLogicalId() == 'colorAll') {
@@ -92,8 +92,8 @@ class blink1Cmd extends cmd {
 			if ($this->getLogicalId() == 'colorAll') {
 				$watchData = json_encode(array('color' => $_options['color']));
 			}
-			if ($this->getLogicalId() == 'patern') {
-				$watchData = json_encode(array('pattern' => $this->getConfiguration('patern')));
+			if ($this->getLogicalId() == 'pattern') {
+				$watchData = json_encode(array('pattern' => $this->getConfiguration('pattern')));
 			}
 			$eqLogic->setConfiguration('watchData', $watchData);
 
@@ -104,8 +104,8 @@ class blink1Cmd extends cmd {
 			if ($this->getLogicalId() == 'colorAll') {
 				$url .= '/blink1/fadeToRGB?rgb=' . urlencode($_options['color']);
 			}
-			if ($this->getLogicalId() == 'patern') {
-				$url .= '/blink1/pattern/play?pname=' . urlencode($this->getConfiguration('patern'));
+			if ($this->getLogicalId() == 'pattern') {
+				$url .= '/blink1/pattern/play?pname=' . urlencode($this->getConfiguration('pattern'));
 			}
 			$request_http = new com_http($url);
 			$request_http->exec();
@@ -123,7 +123,7 @@ class blink1Cmd extends cmd {
 			if ($this->getLogicalId() == 'colorAll') {
 				$command .= '--rgb ' . str_replace('#', '', $_options['color']);
 			} else {
-				$command .= $this->getConfiguration('patern');
+				$command .= $this->getConfiguration('pattern');
 			}
 			log::add('blink1', 'debug', 'ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$request_shell = new com_shell('ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
@@ -135,9 +135,9 @@ class blink1Cmd extends cmd {
 			$command = dirname(__FILE__) . '/../../resources/blink1-tool-';
 			$uname = posix_uname();
 			if (!file_exists($command . $uname['machine'])) {
-				throw new Exception(__('Aucune exécutable trouvé pour l\'architecture : ', __FILE__) . $command . $uname['machine']);
+				throw new Exception(__('Aucun exécutable trouvé pour l\'architecture : ', __FILE__) . $command . $uname['machine']);
 			} else {
-				$command .= $this->getConfiguration('patern');
+				$command .= $this->getConfiguration('pattern');
 			}
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {
