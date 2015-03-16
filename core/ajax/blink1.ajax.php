@@ -29,7 +29,7 @@ try {
 		if(!is_object($eqLogic)){
 			throw new Exception(__('404 - Equipement non trouvé : ', __FILE__).init('id'));
 		}
-		$eqLogic->syncPatern();
+		$eqLogic->syncPattern();
 		ajax::success();
 	}
 
