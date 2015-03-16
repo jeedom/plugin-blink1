@@ -51,7 +51,7 @@ $.ajax({// fonction permettant de faire de l'ajax
 }
 
 /*
- * Fonction pour l'ajout de commande, appellé automatiquement par plugin.template
+ * Fonction pour l'ajout de commande, appelé automatiquement par plugin.template
  */
  function addCmdToTable(_cmd) {
     if (!isset(_cmd)) {
@@ -71,9 +71,9 @@ $.ajax({// fonction permettant de faire de l'ajax
     tr += '<span class="subType" subType="' + init(_cmd.subType) + '"></span>';
     tr += '</td>';
     tr += '<td>';
-    if(!isset(_cmd.logicalId) || _cmd.logicalId == '' || _cmd.logicalId == 'patern'){
-        tr += '<input class="cmdAttr form-control input-sm" data-l1key="logicalId" style="display : none;" value="patern">';
-        tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="patern" placeholder="{{Nom du pattern (en mode api ou url) ou commande (en mode ssh ou local)}}">';
+    if(!isset(_cmd.logicalId) || _cmd.logicalId == '' || _cmd.logicalId == 'pattern'){
+        tr += '<input class="cmdAttr form-control input-sm" data-l1key="logicalId" style="display : none;" value="pattern">';
+        tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="pattern" placeholder="{{Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)}}">';
     }
     tr += '</td>';
     tr += '<td>';
