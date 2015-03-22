@@ -47,7 +47,7 @@ $.ajax({// fonction permettant de faire de l'ajax
 
 
  function printEqLogic(_eqLogic){
-    $('#span_watchUrl').append(wathUrl+'&id='+_eqLogic.id);
+    $('#span_watchUrl').empty().append(wathUrl+'&id='+_eqLogic.id);
 }
 
 /*
