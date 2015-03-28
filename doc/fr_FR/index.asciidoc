@@ -1,3 +1,4 @@
+:icons:
 == Template
 
 === Description
@@ -8,7 +9,3 @@ Il faut installer sur un poste windows ou mac le logiciel Blink1Control : https:
 '''
 === FAQ
 include::faq.asciidoc[]
-
-'''
-=== Changelog
-include::changelog.asciidoc[]
