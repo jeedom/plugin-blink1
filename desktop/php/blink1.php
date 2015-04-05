@@ -4,7 +4,7 @@ if (!isConnect('admin')) {
 }
 sendVarToJS('eqType', 'blink1');
 $eqLogics = eqLogic::byType('blink1');
-sendVarToJS('wathUrl', config::byKey('externalProtocol') . config::byKey('externalAddr') . ':' . config::byKey('externalPort') . config::byKey('externalComplement') . '/plugins/blink1/core/php/watch.php?apikey=' . config::byKey('api'));
+sendVarToJS('wathUrl', network::getNetworkAccess('external') . '/plugins/blink1/core/php/watch.php?apikey=' . config::byKey('api'));
 ?>
 
 <div class="row row-overflow">
