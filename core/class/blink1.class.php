@@ -136,12 +136,12 @@ class blink1Cmd extends cmd {
 			$uname = posix_uname();
 			if (!file_exists($command . $uname['machine'])) {
 				throw new Exception(__('Aucun exécutable trouvé pour l\'architecture : ', __FILE__) . $command . $uname['machine']);
-			} else {
-				$command .= $this->getConfiguration('pattern');
 			}
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {
 				$command .= '--rgb ' . $_options['color'];
+			} else {
+				$command .= $this->getConfiguration('pattern');
 			}
 			$request_shell = new com_shell('sudo ' . $command . ' 2>&1');
 			$request_shell->exec();
