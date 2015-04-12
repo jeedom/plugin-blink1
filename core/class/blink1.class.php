@@ -139,7 +139,7 @@ class blink1Cmd extends cmd {
 			}
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {
-				$command .= '--rgb ' . $_options['color'];
+				$command .= '--rgb ' . str_replace('#', '', $_options['color']);
 			} else {
 				$command .= $this->getConfiguration('pattern');
 			}
