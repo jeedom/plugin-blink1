@@ -24,29 +24,30 @@ foreach ($eqLogics as $eqLogic) {
    <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
     <legend>{{Mes clés blink(1)}}
     </legend>
+
+    <div class="eqLogicThumbnailContainer">
+       <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
+         <center>
+            <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
+        </center>
+        <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
+    </div>
     <?php
-if (count($eqLogics) == 0) {
-	echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de clé blink(1), cliquez sur Ajouter une clé blink(1) pour commencer}}</span></center>";
-} else {
-	?>
-       <div class="eqLogicThumbnailContainer">
-        <?php
 foreach ($eqLogics as $eqLogic) {
-		echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
-		echo "<center>";
-		echo '<img src="plugins/blink1/doc/images/blink1_icon.png" height="105" width="95" />';
-		echo "</center>";
-		echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
-		echo '</div>';
-	}
-	?>
-  </div>
-  <?php }?>
+	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
+	echo "<center>";
+	echo '<img src="plugins/blink1/doc/images/blink1_icon.png" height="105" width="95" />';
+	echo "</center>";
+	echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
+	echo '</div>';
+}
+?>
+</div>
 </div>
 
 <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
     <div class="row">
-     <div class="col-sm-6" >
+       <div class="col-sm-6" >
         <form class="form-horizontal">
             <fieldset>
                 <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
@@ -84,23 +85,23 @@ foreach (object::all() as $object) {
                 <label class="col-sm-3 control-label">{{Mode}}</label>
                 <div class="col-sm-6">
                     <select type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="mode">
-                     <option value="both">{{Les deux}}</option>
-                     <option value="internal">{{Appels à l'API blink(1)}}</option>
-                     <option value="watch">{{Surveillance par URL}}</option>
-                     <option value="ssh">{{SSH}}</option>
-                     <option value="local">{{Local}}</option>
-                 </select>
-             </div>
-         </div>
+                       <option value="both">{{Les deux}}</option>
+                       <option value="internal">{{Appels à l'API blink(1)}}</option>
+                       <option value="watch">{{Surveillance par URL}}</option>
+                       <option value="ssh">{{SSH}}</option>
+                       <option value="local">{{Local}}</option>
+                   </select>
+               </div>
+           </div>
 
-     </fieldset>
- </form>
+       </fieldset>
+   </form>
 </div>
 <div class="col-sm-6" >
- <legend>Configuration</legend>
- <form class="form-horizontal">
+   <legend>Configuration</legend>
+   <form class="form-horizontal">
     <fieldset>
-       <div class="form-group mode both internal">
+     <div class="form-group mode both internal">
         <label class="col-sm-3 control-label">{{Adresse ou IP}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="address"/>
@@ -124,7 +125,7 @@ foreach (object::all() as $object) {
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="username"/>
         </div>
     </div>
-     <div class="form-group mode ssh">
+    <div class="form-group mode ssh">
         <label class="col-sm-3 control-label">{{Chemin relatif de l'exécutable blink1-tool}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pathtoblink1" value="./blink1-tool"/>
