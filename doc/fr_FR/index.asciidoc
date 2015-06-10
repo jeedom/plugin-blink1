@@ -3,8 +3,8 @@
 
 === Description
 Plugin servant à piloter une clé blink(1).
-Il faut installer sur un poste windows ou mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'api server en mode "any"
 
+include::configuration.asciidoc[]
 
 '''
 === FAQ

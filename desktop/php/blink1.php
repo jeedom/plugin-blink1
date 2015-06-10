@@ -132,13 +132,13 @@ foreach (object::all() as $object) {
         </div>
     </div>
     <div class="form-group mode both watch">
-        <label class="col-sm-5 control-label">{{Ne pas répéter les commandes}}</label>
+        <label class="col-sm-3 control-label">{{Ne pas répéter les commandes}}</label>
         <div class="col-sm-3">
             <input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
         </div>
     </div>
     <div class="form-group mode both internal">
-        <label class="col-sm-5 control-label">{{Pattern}}</label>
+        <label class="col-sm-3 control-label">{{Pattern}}</label>
         <div class="col-sm-3">
             <a class="btn btn-default" id="bt_syncPattern"><i class="fa fa-exchange"></i> {{Synchroniser}}</a>
         </div>

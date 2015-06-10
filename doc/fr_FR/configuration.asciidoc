@@ -1,0 +1,118 @@
+=== Configuration
+
+Le plugin ne nécessite aucune configuration, il faut juste l'activer : 
+
+image::../images/blink1.png[]
+
+=== Configuration des équipements
+
+La configuration des équipements blink(1) est accessible à partir du menu plugin : 
+
+image::../images/blink2.png[]
+
+
+Voilà à quoi ressemble la page du plugin blink(1) (ici avec déjà un équipement) : 
+
+image::../images/blink3.png[]
+
+Voilà à quoi ressemble la page de configuration d'un équipement blink(1) : 
+
+image::../images/blink4.png[]
+
+[icon="../images/plugin/tip.png"]
+[TIP]
+Comme à beaucoup d'endroits sur Jeedom, mettre la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez à partir de votre profil le laisser toujours visible).
+
+Vous retrouvez ici toute la configuration de votre équipement : 
+
+* *Nom de l'équipement blink(1)* : nom de votre équipement link(1)
+* *Objet parent* : indique l'objet parent auquel appartient l'équipement
+* *Activer* : permet de rendre votre équipement actif
+* *Visible* : le rend visible sur le dashboard
+* *Mode* : le mode dans lequel vous voulez faire fonctionner votre blonk(1) (voir plus bas pour la description)
+
+En-dessous vous retrouvez la liste des commandes : 
+
+* le nom affiché sur le dashboard
+* le type et le sous-type
+* la valeur : permet de donner la valeur de la commande en fonction d'une autre commande, d'une clef (cas quand on fait un interrupteur virtuel), d'un calcul....
+* Paramètres : nom du patern à lancer ou de la commande à lancer
+* afficher : permet d'afficher la donnée sur le dashboard
+* configuration avancée (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget...)
+* Tester : permet de tester la commande
+* supprimer (signe -) : permet de supprimer la commande
+
+
+=== Mode "Local"
+
+image::../images/blink5.png[]
+
+Mode à utiliser si le blink(1) est branché sur un des ports USB de Jeedom. Il n'y a aucun parametre de configuration dans ce mode la
+
+=== Mode "Appels à l'API blink(1)"
+
+image::../images/blink6.png[]
+
+Dans ce mode Jeedom va directement appeller l'api de blink1control, il faut donc que jeedom puisse joindre en directe le systeme sur lequel la clef blink(1) est installé.
+
+Dans ce mode les parametres de configuration sont : 
+
+* *Adresse ou IP* : adresse ou ip ou la clef blink(1) est installée
+* *Port* : port sur lequel l'application blink1control ecoute
+* *Pattern* : permet de synchroniser les pattern avec ceux de l'application blink1control
+
+==== Installation de l'application blink1control
+
+L'application blink1control se trouve link::http://blink1.thingm.com/blink1control/[ici], dans la partie download, elle est disponible pour windows et mac. Une fois téléchargé lancez l'installation de l'application
+
+==== Configuration de l'application blink1control
+
+Une fois installé et lancez vous devez avoir :
+
+image::../images/blink7.png[]
+
+Cette application offre de très nombreuse possibilités, rapidement on trouve en haut a gauche le status de la clef (ici non branché), en bas a gauche les evenements, en haut au centre des actions rapide pour piloter la clef, juste en dessous un systeme de choix avancé des modes et couleur et a droite les pattern.
+
+Une fois la il faut cliquer sur la petite roue crantée dans device pour faire apparaitre le menu de configuration avancée et activez l'api server, en mettant bien serverHost sur any, noté aussi le port pour le reporter dans la configuration de Jeedom
+
+image::../images/blink8.png[]
+
+Validez et redemarré blink1control pour qu'il le prenne en compte
+
+=== Mode "Surveillance par URL"
+
+image::../images/blink9.png[]
+
+Dans ce mode c'est l'application blink1control qui appels toute les X secondes et cette url va lui donner ses instructions
+
+Pour le configurer il faut dans l'applicaiton blink1control aller sur tools puis cliquer sur le petit plus pour en ajouter un, ensuite faire URL et copier l'url que donne Jeedom (champs URL à surveiller) dans le path. Vous pouvez aussi configurer la fréquence de mise à jour
+
+[icon="../images/plugin/important.png"]
+[IMPORTANT]
+Pour que cela marche il faut que le pc sur lequel est blink1control puisse acceder à Jeedom. Si vous utilisez un pc portable a l'exterieur de votre réseaux avec la clef dessus il faut donc que jeedom soit accessible de l'exterieur. Si vous ne savez pas comment faire, le mieux est d'utiliser le DNS Jeedom
+
+Dans ce mode vous avez aussi une option "Ne pas répéter les commandes" celle-ci permet de ne plus repeter la derniere commande une fois que blink1control à pris en compte la demande. Il est conseillé de la laisser cochée
+
+=== Mode "Les deux"
+
+image::../images/blink11.png[]
+
+Ce mode est une combinaison des 2 modes précedents, l'avantage c'est qu'il combine la vitesse de réaction du premier et la possibilité de le faire marcher meme à l'exterieur de chez soit du deuxieme. Pour la configuration il faut donc suivre les procédure pour le mode "Appels à l'API blink(1)" et le mode "Surveillance par URL"
+
+=== Mode "SSH"
+
+image::../images/blink12.png[]
+
+Ce mode doit etre utilisé si vous avez mis le blink(1) sur une machine linux autre que celle ou est installé Jeedom (jeedom maitre le plugin n'est pas compatible deporté). La configuration est assez simple : 
+
+* *Adresse ou IP* : adresse IP de la machine ou est branché la clef
+* *Nom d'utilisateur* : le nom d'utilisateur pour se connecter sur la machine ou est branché la clef
+* *Chemin relatif de l'exécutable blink1-tool* : chemin relatif vers l'éxecutable blink1-tool
+
+[icon="../images/plugin/tip.png"]
+[TIP]
+L'éxecutable est disponible link::https://github.com/todbot/blink1/releases[ici], attention jeedom ne marche qu'avec la version linux qui n'est bien sur compatible qu'avec une machine de type linux (rpi,rpi2,jeedomboard,cubieboard,bananapi...). Il suffit de transferer l'éxecutable sur la machine ou est branché la clef, de le rendre executable (chmod +x blink1-tool)
+
+[icon="../images/plugin/important.png"]
+[IMPORTANT]
+Pour que cela marche il faut avoir mise en place au niveau SSH l'échange de clef RSA pour que jeedom puisse se connecter sur la machine ou est branché la clef sans fournir de mot de passe
