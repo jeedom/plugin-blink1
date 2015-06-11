@@ -47,7 +47,7 @@ En-dessous vous retrouvez la liste des commandes :
 
 image::../images/blink5.png[]
 
-Mode à utiliser si le blink(1) est branché sur un des ports USB de Jeedom. Il n'y a aucun parametre de configuration dans ce mode la
+Mode à utiliser si le blink(1) est branché sur un des ports USB de Jeedom. Le seul parametre dans ce mode est non obligatoire et permet de selectionner un blink(1) en particulier si vous en avez plusieurs de branché
 
 === Mode "Appels à l'API blink(1)"
 
@@ -105,6 +105,7 @@ image::../images/blink12.png[]
 
 Ce mode doit etre utilisé si vous avez mis le blink(1) sur une machine linux autre que celle ou est installé Jeedom (jeedom maitre le plugin n'est pas compatible deporté). La configuration est assez simple : 
 
+* *Numéro de péripherique* : id du peripherique, a n'utiliser que que si vous avez plusieurs clef blink(1) sur votre machine 
 * *Adresse ou IP* : adresse IP de la machine ou est branché la clef
 * *Nom d'utilisateur* : le nom d'utilisateur pour se connecter sur la machine ou est branché la clef
 * *Chemin relatif de l'exécutable blink1-tool* : chemin relatif vers l'éxecutable blink1-tool
