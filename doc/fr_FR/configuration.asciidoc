@@ -63,7 +63,7 @@ Dans ce mode les parametres de configuration sont :
 
 ==== Installation de l'application blink1control
 
-L'application blink1control se trouve link::http://blink1.thingm.com/blink1control/[ici], dans la partie download, elle est disponible pour windows et mac. Une fois téléchargé lancez l'installation de l'application
+L'application blink1control se trouve link:http://blink1.thingm.com/blink1control/[ici], dans la partie download, elle est disponible pour windows et mac. Une fois téléchargé lancez l'installation de l'application
 
 ==== Configuration de l'application blink1control
 
@@ -111,7 +111,7 @@ Ce mode doit etre utilisé si vous avez mis le blink(1) sur une machine linux au
 
 [icon="../images/plugin/tip.png"]
 [TIP]
-L'éxecutable est disponible link::https://github.com/todbot/blink1/releases[ici], attention jeedom ne marche qu'avec la version linux qui n'est bien sur compatible qu'avec une machine de type linux (rpi,rpi2,jeedomboard,cubieboard,bananapi...). Il suffit de transferer l'éxecutable sur la machine ou est branché la clef, de le rendre executable (chmod +x blink1-tool)
+L'éxecutable est disponible link:https://github.com/todbot/blink1/releases[ici], attention jeedom ne marche qu'avec la version linux qui n'est bien sur compatible qu'avec une machine de type linux (rpi,rpi2,jeedomboard,cubieboard,bananapi...). Il suffit de transferer l'éxecutable sur la machine ou est branché la clef, de le rendre executable (chmod +x blink1-tool)
 
 [icon="../images/plugin/important.png"]
 [IMPORTANT]
