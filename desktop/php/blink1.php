@@ -99,7 +99,7 @@ foreach (object::all() as $object) {
    <form class="form-horizontal">
     <fieldset>
      <div class="form-group mode ssh local expertModeVisible">
-        <label class="col-sm-3 control-label">{{Numéro de péripherique}}</label>
+        <label class="col-sm-3 control-label">{{Numéro de périphérique}}</label>
         <div class="col-sm-6">
             <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="device" title="{{Laisser vide pour utiliser le premier blink(1) trouvé}}"/>
         </div>
