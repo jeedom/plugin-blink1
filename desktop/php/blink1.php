@@ -73,29 +73,26 @@ foreach (object::all() as $object) {
                </div>
                <div class="form-group">
                 <label class="col-sm-3 control-label" >{{Activer}}</label>
-                <div class="col-sm-1">
-                    <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" size="16" checked/>
-                </div>
-                <label class="col-sm-3 control-label" >{{Visible}}</label>
-                <div class="col-sm-1">
-                    <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">{{Mode}}</label>
-                <div class="col-sm-6">
-                    <select type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="mode">
-                       <option value="both">{{Les deux}}</option>
-                       <option value="internal">{{Appels à l'API blink(1)}}</option>
-                       <option value="watch">{{Surveillance par URL}}</option>
-                       <option value="ssh">{{SSH}}</option>
-                       <option value="local">{{Local}}</option>
-                   </select>
-               </div>
+                <div class="col-sm-9">
+                 <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>
+                 <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
+             </div>
+         </div>
+         <div class="form-group">
+            <label class="col-sm-3 control-label">{{Mode}}</label>
+            <div class="col-sm-6">
+                <select type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="mode">
+                   <option value="both">{{Les deux}}</option>
+                   <option value="internal">{{Appels à l'API blink(1)}}</option>
+                   <option value="watch">{{Surveillance par URL}}</option>
+                   <option value="ssh">{{SSH}}</option>
+                   <option value="local">{{Local}}</option>
+               </select>
            </div>
+       </div>
 
-       </fieldset>
-   </form>
+   </fieldset>
+</form>
 </div>
 <div class="col-sm-6" >
    <legend>Configuration</legend>
@@ -134,7 +131,7 @@ foreach (object::all() as $object) {
     <div class="form-group mode both watch">
         <label class="col-sm-3 control-label">{{Ne pas répéter les commandes}}</label>
         <div class="col-sm-3">
-            <input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
+            <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
         </div>
     </div>
     <div class="form-group mode both internal">
