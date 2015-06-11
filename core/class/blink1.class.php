@@ -125,6 +125,9 @@ class blink1Cmd extends cmd {
 			} else {
 				$command .= $this->getConfiguration('pattern');
 			}
+			if ($eqLogic->getConfiguration('device') != '') {
+				$command .= ' -d ' . $eqLogic->getConfiguration('device');
+			}
 			log::add('blink1', 'debug', 'ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$request_shell = new com_shell('ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$result = $request_shell->exec();
@@ -142,6 +145,9 @@ class blink1Cmd extends cmd {
 				$command .= '--rgb ' . str_replace('#', '', $_options['color']);
 			} else {
 				$command .= $this->getConfiguration('pattern');
+			}
+			if ($eqLogic->getConfiguration('device') != '') {
+				$command .= ' -d ' . $eqLogic->getConfiguration('device');
 			}
 			$request_shell = new com_shell('sudo ' . $command . ' 2>&1');
 			$request_shell->exec();
