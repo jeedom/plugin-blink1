@@ -2,7 +2,7 @@
 == Template
 
 === Description
-Plugin servant à piloter une clé blink(1).
+Plugin servant à piloter une clef blink(1).
 
 include::configuration.asciidoc[]
 
