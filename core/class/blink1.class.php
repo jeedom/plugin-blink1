@@ -108,7 +108,12 @@ class blink1Cmd extends cmd {
 				$url .= '/blink1/pattern/play?pname=' . urlencode($this->getConfiguration('pattern'));
 			}
 			$request_http = new com_http($url);
-			$request_http->exec();
+			if (isset($_options['speedAndNoErrorReport']) && $_options['speedAndNoErrorReport'] == true) {
+				$request_http->setNoReportError(true);
+				$request_http->exec(0.1, 1);
+			} else {
+				$request_http->exec();
+			}
 			if ($eqLogic->getConfiguration('mode') == 'both' && $eqLogic->getConfiguration('doNoRepeatCommand') == 1) {
 				$eqLogic->setConfiguration('watchData', '');
 			}
@@ -130,6 +135,9 @@ class blink1Cmd extends cmd {
 			}
 			log::add('blink1', 'debug', 'ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
 			$request_shell = new com_shell('ssh "' . $eqLogic->getConfiguration('username') . '"@"' . $eqLogic->getConfiguration('host') . '" sudo "' . $command . '" 2>&1');
+			if (isset($_options['speedAndNoErrorReport']) && $_options['speedAndNoErrorReport'] == true) {
+				$request_shell->setBackground(true);
+			}
 			$result = $request_shell->exec();
 			log::add('blink1', 'debug', $result);
 		}
@@ -150,6 +158,9 @@ class blink1Cmd extends cmd {
 				$command .= ' -d ' . $eqLogic->getConfiguration('device');
 			}
 			$request_shell = new com_shell('sudo ' . $command . ' 2>&1');
+			if (isset($_options['speedAndNoErrorReport']) && $_options['speedAndNoErrorReport'] == true) {
+				$request_shell->setBackground(true);
+			}
 			$request_shell->exec();
 		}
 	}
