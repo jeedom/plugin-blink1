@@ -1,10 +1,10 @@
-=== Configuration
+== Configuration
 
 Le plugin ne nécessite aucune configuration, il faut juste l'activer : 
 
 image::../images/blink1.png[]
 
-=== Configuration des équipements
+== Configuration des équipements
 
 La configuration des équipements blink(1) est accessible à partir du menu plugin : 
 
@@ -43,7 +43,7 @@ En-dessous vous retrouvez la liste des commandes :
 * supprimer (signe -) : permet de supprimer la commande
 
 
-=== Mode "Local"
+== Mode "Local"
 
 image::../images/blink5.png[]
 
@@ -61,11 +61,11 @@ Dans ce mode les paramètres de configuration sont :
 * *Port* : port sur lequel l'application blink1control écoute
 * *Pattern* : permet de synchroniser les pattern avec ceux de l'application blink1control
 
-==== Installation de l'application blink1control
+=== Installation de l'application blink1control
 
 L'application blink1control se trouve link:http://blink1.thingm.com/blink1control/[ici], dans la partie download, elle est disponible pour windows et mac. Une fois téléchargée, lancez l'installation de l'application.
 
-==== Configuration de l'application blink1control
+=== Configuration de l'application blink1control
 
 Une fois installée et lancée vous devez avoir :
 
@@ -79,7 +79,7 @@ image::../images/blink8.png[]
 
 Validez et redémarrez blink1control pour qu'il le prenne en compte.
 
-=== Mode "Surveillance par URL"
+== Mode "Surveillance par URL"
 
 image::../images/blink9.png[]
 
@@ -93,13 +93,13 @@ Pour que cela marche il faut que le pc sur lequel est blink1control puisse accè
 
 Dans ce mode vous avez aussi une option "Ne pas répéter les commandes" celle-ci permet de ne plus répéter la dernière commande une fois que blink1control a pris en compte la demande. Il est conseillé de la laisser cochée.
 
-=== Mode "Les deux"
+== Mode "Les deux"
 
 image::../images/blink11.png[]
 
 Ce mode est une combinaison des 2 modes précédents, l'avantage c'est qu'il combine la vitesse de réaction du premier et la possibilité de le faire marcher même à l'extérieur de chez soit du deuxième. Pour la configuration il faut donc suivre les procédures pour le mode "Appels à l'API blink(1)" et le mode "Surveillance par URL".
 
-=== Mode "SSH"
+== Mode "SSH"
 
 image::../images/blink12.png[]
 

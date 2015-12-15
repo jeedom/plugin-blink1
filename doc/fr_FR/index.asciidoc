@@ -1,11 +1,6 @@
-:icons:
-== Template
+= Blink1
 
-=== Description
+== Description
 Plugin servant à piloter une clef blink(1).
 
 include::configuration.asciidoc[]
-
-'''
-=== FAQ
-include::faq.asciidoc[]
