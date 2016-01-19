@@ -37,6 +37,7 @@ class blink1 extends eqLogic {
 		$colorAll->setLogicalId('colorAll');
 		$colorAll->setType('action');
 		$colorAll->setSubType('color');
+		$colorAll->setDisplay('generic_type', 'LIGHT_SET_COLOR');
 		$colorAll->setEqlogic_id($this->getId());
 		$colorAll->save();
 	}
