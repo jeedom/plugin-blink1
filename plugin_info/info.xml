@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <info>
     <id>blink1</id>
-    <name>blink(1)</name>
+    <name>Blink(1)</name>
     <description>Plugin servant à piloter une clé blink(1).</description>
     <icon>fa fa-keyboard-o</icon>
     <licence>AGPL</licence>
