@@ -61,11 +61,18 @@ $.ajax({// fonction permettant de faire de l'ajax
         _cmd.configuration = {};
     }
     var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
-    tr += '<td>';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="name" style="width : 180px;" placeholder="{{Nom}}">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="id"  style="display : none;">';
+     tr += '<td>';
+    tr += '<input class="cmdAttr form-control input-sm" data-l1key="id" style="display : none;">';
+    tr += '<div class="row">';
+	tr += '<div class="col-sm-6">';
+	tr += '<input class="cmdAttr form-control input-sm" data-l1key="name">';
+	tr += '</div>';
+	tr += '<div class="col-sm-6">';
+	tr += '<a class="cmdAction btn btn-default btn-sm" data-l1key="chooseIcon"><i class="fa fa-flag"></i> Icone</a>';
+	tr += '<span class="cmdAttr" data-l1key="display" data-l2key="icon" style="margin-left : 10px;"></span>';
+	tr += '</div>';
+	tr += '</div>';
     tr += '</td>';
-
     tr += '<td>';
     tr += '<input class="cmdAttr form-control type input-sm" data-l1key="type" value="action" disabled style="margin-bottom : 5px;width : 120px;" />';
     tr += '<span class="subType" subType="' + init(_cmd.subType) + '"></span>';
