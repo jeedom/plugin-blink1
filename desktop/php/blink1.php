@@ -57,8 +57,15 @@ foreach ($eqLogics as $eqLogic) {
 ?>
 </div>
 </div>
-
 <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
+<a class="btn btn-success eqLogicAction pull-right" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
+  <a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Equipement}}</a></li>
+    <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
+  </ul>
+  <div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+    <div role="tabpanel" class="tab-pane active" id="eqlogictab">
     <div class="row">
        <div class="col-sm-6" >
         <form class="form-horizontal">
@@ -85,12 +92,12 @@ foreach (object::all() as $object) {
                    </div>
                </div>
                <div class="form-group">
-                <label class="col-sm-3 control-label" >{{Activer}}</label>
+                <label class="col-sm-3 control-label"></label>
                 <div class="col-sm-9">
-                 <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>
-                 <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
-             </div>
-         </div>
+                  <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>{{Activer}}</label>
+                  <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>{{Visible}}</label>
+                </div>
+              </div>
          <div class="form-group">
             <label class="col-sm-3 control-label">{{Mode}}</label>
             <div class="col-sm-6">
@@ -108,7 +115,7 @@ foreach (object::all() as $object) {
 </form>
 </div>
 <div class="col-sm-6" >
-   <legend><i class="fa fa-wrench"></i>  Configuration</legend>
+   <legend><i class="fa fa-wrench"></i>  {{Configuration}}</legend>
    <form class="form-horizontal">
     <fieldset>
      <div class="form-group mode ssh local expertModeVisible">
@@ -150,7 +157,7 @@ foreach (object::all() as $object) {
     <div class="form-group mode both watch">
         <label class="col-sm-3 control-label">{{Ne pas répéter les commandes}}</label>
         <div class="col-sm-3">
-            <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
+			<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="doNoRepeatCommand"/>
         </div>
     </div>
     <div class="form-group mode both internal">
@@ -173,11 +180,12 @@ foreach (object::all() as $object) {
     </div>
 </fieldset>
 </form>
+</div>
 
+<div role="tabpanel" class="tab-pane" id="commandtab">
 
-<legend><i class="fa fa-list"></i>  {{Commandes}}</legend>
-<a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande / un pattern}}</a><br/><br/>
-<table id="table_cmd" class="table table-bordered table-condensed">
+<a class="btn btn-success btn-sm cmdAction pull-right" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande}}</a><br/><br/>
+  <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
             <th style="width : 300px;">{{Nom}}</th>
@@ -190,16 +198,8 @@ foreach (object::all() as $object) {
     <tbody>
     </tbody>
 </table>
-
-<form class="form-horizontal">
-    <fieldset>
-        <div class="form-actions">
-            <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-            <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
-        </div>
-    </fieldset>
-</form>
-
+</div>
+</div>
 </div>
 </div>
 

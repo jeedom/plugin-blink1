@@ -1,0 +1,9 @@
+{
+	"id" : "blink1",
+	"name" : "Blink(1)",
+	"description" : "Plugin servant à piloter une clé blink(1)",
+	"licence" : "AGPL",
+	"author" : "Loïc",
+	"require" : "2.5",
+	"category" : "devicecommunication"
+}

@@ -159,9 +159,6 @@ class blink1Cmd extends cmd {
 				$command .= ' -d ' . $eqLogic->getConfiguration('device');
 			}
 			$request_shell = new com_shell('sudo ' . $command . ' 2>&1');
-			if (isset($_options['speedAndNoErrorReport']) && $_options['speedAndNoErrorReport'] == true) {
-				$request_shell->setBackground(true);
-			}
 			$request_shell->exec();
 		}
 	}
