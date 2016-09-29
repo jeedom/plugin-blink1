@@ -1,0 +1,6 @@
+= Blink1
+
+== Description
+Plugin servant à piloter une clef blink(1).
+
+include::configuration.asciidoc[]

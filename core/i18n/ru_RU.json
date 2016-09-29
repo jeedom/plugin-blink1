@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "Плагин для управления blink(1).",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "На Windows или MacOS должно быть установлено ПО Blink1Control: https://github.com/todbot/blink1/releases и опция для активации API сервера в положении \"any\""
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "Добавить мигающий blink(1)",
+        "Rechercher": "Искать",
+        "Mes clés blink(1)": "Мои мигающие blink(1)",
+        "Général": "Главная",
+        "Nom de l'équipement blink(1)": "Имя оборудования blink(1)",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Activer": "Активировать",
+        "Visible": "Видимый",
+        "Mode": "Режим",
+        "Les deux": "Оба",
+        "Appels à l'API blink(1)": "API вызовы blink(1)",
+        "Surveillance par URL": "URL наблюдения",
+        "SSH": "SSH",
+        "Local": "Локальный",
+        "Adresse ou IP": "IP адрес",
+        "Port": "Порт",
+        "Nom d'utilisateur": "Имя пользователя",
+        "Ne pas répéter les commandes": "Не повторяйте запросы",
+        "Pattern": "Шаблон",
+        "Synchroniser": "Синхронизировать",
+        "URL à surveiller": "URL для просмотра",
+        "Commandes": "Команды",
+        "Ajouter une commande pattern": "Добавить шаблон команды",
+        "Nom": "Имя",
+        "Type": "Тип",
+        "Paramètres": "Параметры",
+        "Options": "Опции",
+        "Action": "Действие",
+        "Supprimer": "Удалить",
+        "Sauvegarder": "Сохранить"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "Имя",
+        "Nom du pattern": "Имя шаблона",
+        "Afficher": "Отобразить",
+        "Tester": "Тест"
+    }
+}

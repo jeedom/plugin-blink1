@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "Plugin servant à piloter une clé blink(1).",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\""
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "Ajouter une clé blink(1)",
+        "Rechercher": "Mencari",
+        "Mes clés blink(1)": "Mes clés blink(1)",
+        "Général": "Umum",
+        "Nom de l'équipement blink(1)": "Nom de l'équipement blink(1)",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Mode": "Mode",
+        "Les deux": "Les deux",
+        "Appels à l'API blink(1)": "Appels à l'API blink(1)",
+        "Surveillance par URL": "Surveillance par URL",
+        "SSH": "SSH",
+        "Local": "Local",
+        "Adresse ou IP": "Adresse ou IP",
+        "Port": "Port",
+        "Nom d'utilisateur": "Nama pemakai",
+        "Ne pas répéter les commandes": "Ne pas répéter les commandes",
+        "Pattern": "Pattern",
+        "Synchroniser": "Menyinkronkan",
+        "URL à surveiller": "URL à surveiller",
+        "Commandes": "Perintah",
+        "Ajouter une commande pattern": "Ajouter une commande pattern",
+        "Nom": "Nama",
+        "Type": "Jenis",
+        "Paramètres": "Parameter²",
+        "Options": "Pilihan",
+        "Action": "Tindakan",
+        "Supprimer": "Menghapus",
+        "Sauvegarder": "Menyimpan"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "Nama",
+        "Nom du pattern": "Nom du pattern",
+        "Afficher": "Memenitikan",
+        "Tester": "Coba"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "Plugin para accionar una llave blink(1).",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Debe instalar en Windows o Mac del programa Blink1Control: https://github.com/todbot/blink1/releases y en las opciones activar en la API server el modo  \"any\""
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "Añadir una llave blink(1)",
+        "Rechercher": "Buscar",
+        "Mes clés blink(1)": "Mis llaves Blink(1)",
+        "Général": "Principal",
+        "Nom de l'équipement blink(1)": "Nombre del dispositivo Blink(1)",
+        "Objet parent": "Objeto padre",
+        "Aucun": "Ningún",
+        "Activer": "Activar",
+        "Visible": "Visible",
+        "Mode": "Modo",
+        "Les deux": "Los dos",
+        "Appels à l'API blink(1)": "Llamadas  a la API Blink(1)",
+        "Surveillance par URL": "Vigilancia por Url ",
+        "SSH": "SSH",
+        "Local": "Local",
+        "Adresse ou IP": "Dirección o IP",
+        "Port": "Puerto",
+        "Nom d'utilisateur": "Nombre de usuario",
+        "Ne pas répéter les commandes": "No repetir las órdenes",
+        "Pattern": "Pattern",
+        "Synchroniser": "Sincronizar",
+        "URL à surveiller": "URL a vigilar ",
+        "Commandes": "Órdenes",
+        "Ajouter une commande pattern": "Añadir una orden pattern",
+        "Nom": "Nombre",
+        "Type": "Tipo",
+        "Paramètres": "Parámetros",
+        "Options": "Opciones",
+        "Action": "Acción",
+        "Supprimer": "Borrar",
+        "Sauvegarder": "Guardar"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "Nombre",
+        "Nom du pattern": "Nombre del pattern",
+        "Afficher": "Mostrar",
+        "Tester": "Probar"
+    }
+}

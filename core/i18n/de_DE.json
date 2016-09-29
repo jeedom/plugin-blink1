@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "Plugin, das dazu dient, einen Schlüssel blink(1) zu steuern,. ",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Muss auf einem Windows- oder Mac-mail Blink1Control Software installiert werden: https://github.com/todbot/blink1/releases und die Optionen, um die API-Server in \"jedem\" Mode aktivieren"
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "blink(1) Schlüssel hinzufügen",
+        "Rechercher": "Suchen nach",
+        "Mes clés blink(1)": "Mein blink(1) Schlüssel",
+        "Général": "Allgemein",
+        "Nom de l'équipement blink(1)": "blink(1) Gerätename",
+        "Objet parent": "Eltern-Objekt",
+        "Aucun": "Ohne",
+        "Activer": "aktivieren",
+        "Visible": "Sichtbar",
+        "Mode": "Modus",
+        "Les deux": "Beide",
+        "Appels à l'API blink(1)": "Apple blink (1) API",
+        "Surveillance par URL": "Überwachungs URL",
+        "SSH": "SSH",
+        "Local": "Lokal",
+        "Adresse ou IP": "Adresse oder IP",
+        "Port": "Port",
+        "Nom d'utilisateur": "Benutzername",
+        "Ne pas répéter les commandes": "Den Befehl nicht wiederholen",
+        "Pattern": "Muster",
+        "Synchroniser": "Synchronisieren",
+        "URL à surveiller": "URL beobachten",
+        "Commandes": "Befehle",
+        "Ajouter une commande pattern": "Muster-Befehl hinzufügen",
+        "Nom": "Name",
+        "Type": "Typ",
+        "Paramètres": "Parameter",
+        "Options": "Optionen",
+        "Action": "Aktion",
+        "Supprimer": "Löschen",
+        "Sauvegarder": "Speichern"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "Name",
+        "Nom du pattern": "Muster Name",
+        "Afficher": "anzeigen",
+        "Tester": "Test"
+    }
+}
