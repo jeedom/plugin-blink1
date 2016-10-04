@@ -149,6 +149,8 @@ class blink1Cmd extends cmd {
 			if (!file_exists($command . $uname['machine'])) {
 				throw new Exception(__('Aucun exécutable trouvé pour l\'architecture : ', __FILE__) . $command . $uname['machine']);
 			}
+			$request_shell = new com_shell('sudo chmod 777 ' . $command . $uname['machine']);
+			$request_shell->exec();
 			$command = $command . $uname['machine'] . ' ';
 			if ($this->getLogicalId() == 'colorAll') {
 				$command .= '--rgb ' . str_replace('#', '', $_options['color']);
