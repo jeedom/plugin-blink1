@@ -1,10 +1,10 @@
-== Configuration
+== Konfiguration
 
 Le plugin ne nécessite aucune configuration, il faut juste l'activer : 
 
 image::../images/blink1.png[]
 
-== Configuration des équipements
+== Geräte Konfiguration
 
 La configuration des équipements blink(1) est accessible à partir du menu Plugins : 
 

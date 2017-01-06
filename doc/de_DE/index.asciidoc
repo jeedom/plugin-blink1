@@ -1,6 +1,6 @@
 = Blink1
 
-== Description
+== Beschreibung
 Plugin servant à piloter une clef blink(1).
 
 include::configuration.asciidoc[]
