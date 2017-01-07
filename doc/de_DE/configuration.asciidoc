@@ -6,12 +6,12 @@ image::../images/blink1.png[]
 
 == Geräte Konfiguration
 
-La configuration des équipements blink(1) est accessible à partir du menu Plugins : 
+Die Konfiguration von blink(1)-Geräten ist in dem Plugin-Menü verfügbar : 
 
 image::../images/blink2.png[]
 
 
-Voilà à quoi ressemble la page du plugin blink(1) (ici avec déjà un équipement) : 
+Das sieht wie die blink(1) Plugin-Seite aus (hier bereits mit 1 Gerät) : 
 
 image::../images/blink3.png[]
 
