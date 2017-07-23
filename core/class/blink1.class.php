@@ -69,6 +69,10 @@ class blink1 extends eqLogic {
 			}
 		}
 	}
+	
+	public function getImage() {
+        return 'plugins/blink1/doc/images/blink1_device.png';
+    }
 
 	/*     * **********************Getteur Setteur*************************** */
 }

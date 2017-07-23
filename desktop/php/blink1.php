@@ -46,7 +46,7 @@ foreach ($eqLogics as $eqLogic) {
 		$opacity = 'opacity:0.3;';
 	}
 	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="text-align: center; background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
-	echo '<img src="plugins/blink1/doc/images/blink1_icon.png" height="105" width="95" />';
+	echo '<img src="plugins/blink1/doc/images/blink1_device.png" height="105" width="95" />';
 	echo "<br>";
 	echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space:text-align: center;  pre-wrap;word-wrap: break-word;">' . $eqLogic->getHumanName(true, true) . '</span>';
 	echo '</div>';
@@ -88,6 +88,19 @@ foreach (object::all() as $object) {
                        </select>
                    </div>
                </div>
+			   <div class="form-group">
+              <label class="col-sm-3 control-label">{{Catégorie}}</label>
+              <div class="col-sm-9">
+                <?php
+foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
+	echo '<label class="checkbox-inline">';
+	echo '<input type="checkbox" class="eqLogicAttr" data-l1key="category" data-l2key="' . $key . '" />' . $value['name'];
+	echo '</label>';
+}
+?>
+
+             </div>
+           </div>
                <div class="form-group">
                 <label class="col-sm-3 control-label"></label>
                 <div class="col-sm-9">
