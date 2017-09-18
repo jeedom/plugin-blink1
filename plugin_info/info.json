@@ -4,6 +4,8 @@
 	"description" : "Plugin servant à piloter une clé blink(1)",
 	"licence" : "AGPL",
 	"author" : "Loïc",
-	"require" : "2.4",
-	"category" : "devicecommunication"
+	"require" : "3.0",
+	"category" : "devicecommunication",
+	"changelog" : "https://github.com/jeedom/plugin-blink1/blob/stable/doc/#language#/changelog.asciidoc",
+	"documentation" : "https://github.com/jeedom/plugin-blink1/blob/stable/doc/#language#/index.asciidoc"
 }
