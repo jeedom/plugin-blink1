@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "Blink(1) anahtarı kullanmaya yarayan eklenti",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Windows ou Mac bir bilgisayara Blink1Control programını yüklemeniz gerekli : https://github.com/todbot/blink1/releases ve opsiyonlarda sunucu API yı  \"any\" modunda aktif edin"
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "Blink(1) anahtarı ekleyim",
+        "Rechercher": "Arayın",
+        "Mes clés blink(1)": "blink(1) anahatarlarım",
+        "Général": "Genel",
+        "Nom de l'équipement blink(1)": "Blink(1) cihazının ismi",
+        "Objet parent": "Üst nesne",
+        "Aucun": "Hiçbir",
+        "Activer": "Etkinleştirmek",
+        "Visible": "Görülebilir",
+        "Mode": "Mod",
+        "Les deux": "İkiside",
+        "Appels à l'API blink(1)": "blink(1) API a çağrı",
+        "Surveillance par URL": "URL den gözetim",
+        "SSH": "SSH",
+        "Local": "Yerel",
+        "Adresse ou IP": "Adres yada IP",
+        "Port": "Port",
+        "Nom d'utilisateur": "Kullanıcı adı ",
+        "Ne pas répéter les commandes": "Komutaları tekraklamayın",
+        "Pattern": "Model",
+        "Synchroniser": "Senkeronize et",
+        "URL à surveiller": "Gözetimesi gereken URL",
+        "Commandes": "Komutalar",
+        "Ajouter une commande pattern": "Model komutası ekleyin",
+        "Nom": "İsim",
+        "Type": "Ceşit",
+        "Paramètres": "Ayarlar ( Séçenekler )",
+        "Options": "Opsiyonlar",
+        "Action": "Etki",
+        "Supprimer": "Sil",
+        "Sauvegarder": "Kaydet"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "İsim",
+        "Nom du pattern": "Modelin ismi",
+        "Afficher": "Göster",
+        "Tester": "Dene"
+    }
+}

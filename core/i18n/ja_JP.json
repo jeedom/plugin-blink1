@@ -1,0 +1,45 @@
+{
+    "plugins/blink1/plugin_info/info.xml": {
+        "Plugin servant à piloter une clé blink(1).": "ブリンクキー（1）を駆動するためのプラグイン。",
+        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "WindowsマシンやMac Blink1Controlソフトウェアをインストールする必要がありますオプションをhttps://github.com/todbot/blink1/releasesと「任意の」方式でAPIサーバーをアクティブ化"
+    },
+    "plugins/blink1/desktop/php/blink1.php": {
+        "Ajouter une clé blink(1)": "（1）点滅のキーを追加します。",
+        "Rechercher": "検索する",
+        "Mes clés blink(1)": "マイキー点滅（1）",
+        "Général": "コモン",
+        "Nom de l'équipement blink(1)": "点滅機器に名前を付け（1）",
+        "Objet parent": "親オブジェクト",
+        "Aucun": "何でもありません",
+        "Activer": "アクティブにし",
+        "Visible": "目に見えます",
+        "Mode": "モード",
+        "Les deux": "どちらも",
+        "Appels à l'API blink(1)": "（1）APIを点滅させる呼び出し",
+        "Surveillance par URL": "URLによってモニタリング",
+        "SSH": "SSH",
+        "Local": "ローカル",
+        "Adresse ou IP": "またはIPアドレス",
+        "Port": "ポート",
+        "Nom d'utilisateur": "ユーザー名",
+        "Ne pas répéter les commandes": "注文を繰り返さないでください",
+        "Pattern": "パターン",
+        "Synchroniser": "同期",
+        "URL à surveiller": "URL監視",
+        "Commandes": "コマンド",
+        "Ajouter une commande pattern": "コマンドパターンを追加します。",
+        "Nom": "表題",
+        "Type": "タイプ",
+        "Paramètres": "設定",
+        "Options": "オプション",
+        "Action": "アクション",
+        "Supprimer": "取り除きます",
+        "Sauvegarder": "セーブ"
+    },
+    "plugins/blink1/desktop/js/blink1.js": {
+        "Nom": "表題",
+        "Nom du pattern": "パターン名",
+        "Afficher": "ディスプレイ",
+        "Tester": "テスト"
+    }
+}
