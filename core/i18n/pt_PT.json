@@ -1,16 +1,25 @@
 {
-    "plugins/blink1/plugin_info/info.xml": {
-        "Plugin servant à piloter une clé blink(1).": "Plugin para a condução de uma chave de piscar (1).",
-        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Deve ser instalado em uma máquina Windows ou Mac Blink1Control o software: https://github.com/todbot/blink1/releases as opções e ativar o servidor API em \"qualquer\" moda"
+    "desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
+        "Afficher": "display",
+        "Tester": "teste"
     },
-    "plugins/blink1/desktop/php/blink1.php": {
-        "Ajouter une clé blink(1)": "Adicionar uma chave de piscar (1)",
+    "desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Ajouter une blink(1)": "Ajouter une blink(1)",
         "Rechercher": "Pesquisar",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
         "Mes clés blink(1)": "Meu piscar chave (1)",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "remover",
+        "Equipement": "Equipement",
+        "Commandes": "comandos",
         "Général": "Geral",
         "Nom de l'équipement blink(1)": "Nome equipamentos piscar (1)",
         "Objet parent": "objeto pai",
         "Aucun": "Nemhum",
+        "Catégorie": "Catégorie",
         "Activer": "Ativar",
         "Visible": "Visível",
         "Mode": "modo",
@@ -19,24 +28,29 @@
         "Surveillance par URL": "O monitoramento por URL",
         "SSH": "SSH",
         "Local": "local",
+        "Numéro de périphérique": "Numéro de périphérique",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Laisser vide pour utiliser le premier blink(1) trouvé",
         "Adresse ou IP": "Ou endereço IP",
         "Port": "porta",
         "Nom d'utilisateur": "Nome de Usuário",
+        "Chemin relatif de l'exécutable blink1-tool": "Chemin relatif de l'exécutable blink1-tool",
         "Ne pas répéter les commandes": "Não repetir ordens",
         "Pattern": "padrão",
         "Synchroniser": "sincronizar",
         "URL à surveiller": "monitoramento de URL",
-        "Commandes": "comandos",
-        "Ajouter une commande pattern": "Adicionar um padrão de comando",
+        "Ajouter une commande": "Ajouter une commande",
         "Nom": "Nome",
         "Type": "tipo",
         "Paramètres": "configurações",
         "Options": "opções",
-        "Action": "ação",
-        "Supprimer": "remover",
-        "Sauvegarder": "Salvar"
+        "Action": "ação"
     },
-    "plugins/blink1/desktop/js/blink1.js": {
+    "core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "404 - Equipement non trouvé : ": "404 - Equipement non trouvé : ",
+        "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
+    },
+    "core\/class\/blink1.class.php": {
         "Nom": "Nome",
         "Nom du pattern": "nome do padrão",
         "Afficher": "display",

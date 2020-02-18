@@ -1,16 +1,25 @@
 {
-    "plugins/blink1/plugin_info/info.xml": {
-        "Plugin servant à piloter une clé blink(1).": "Blink(1) anahtarı kullanmaya yarayan eklenti",
-        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Windows ou Mac bir bilgisayara Blink1Control programını yüklemeniz gerekli : https://github.com/todbot/blink1/releases ve opsiyonlarda sunucu API yı  \"any\" modunda aktif edin"
+    "desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
+        "Afficher": "Göster",
+        "Tester": "Dene"
     },
-    "plugins/blink1/desktop/php/blink1.php": {
-        "Ajouter une clé blink(1)": "Blink(1) anahtarı ekleyim",
+    "desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Ajouter une blink(1)": "Ajouter une blink(1)",
         "Rechercher": "Arayın",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
         "Mes clés blink(1)": "blink(1) anahatarlarım",
+        "Sauvegarder": "Kaydet",
+        "Supprimer": "Sil",
+        "Equipement": "Equipement",
+        "Commandes": "Komutalar",
         "Général": "Genel",
         "Nom de l'équipement blink(1)": "Blink(1) cihazının ismi",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
+        "Catégorie": "Catégorie",
         "Activer": "Etkinleştirmek",
         "Visible": "Görülebilir",
         "Mode": "Mod",
@@ -19,24 +28,29 @@
         "Surveillance par URL": "URL den gözetim",
         "SSH": "SSH",
         "Local": "Yerel",
+        "Numéro de périphérique": "Numéro de périphérique",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Laisser vide pour utiliser le premier blink(1) trouvé",
         "Adresse ou IP": "Adres yada IP",
         "Port": "Port",
         "Nom d'utilisateur": "Kullanıcı adı ",
+        "Chemin relatif de l'exécutable blink1-tool": "Chemin relatif de l'exécutable blink1-tool",
         "Ne pas répéter les commandes": "Komutaları tekraklamayın",
         "Pattern": "Model",
         "Synchroniser": "Senkeronize et",
         "URL à surveiller": "Gözetimesi gereken URL",
-        "Commandes": "Komutalar",
-        "Ajouter une commande pattern": "Model komutası ekleyin",
+        "Ajouter une commande": "Ajouter une commande",
         "Nom": "İsim",
         "Type": "Ceşit",
         "Paramètres": "Ayarlar ( Séçenekler )",
         "Options": "Opsiyonlar",
-        "Action": "Etki",
-        "Supprimer": "Sil",
-        "Sauvegarder": "Kaydet"
+        "Action": "Etki"
     },
-    "plugins/blink1/desktop/js/blink1.js": {
+    "core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "404 - Equipement non trouvé : ": "404 - Equipement non trouvé : ",
+        "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
+    },
+    "core\/class\/blink1.class.php": {
         "Nom": "İsim",
         "Nom du pattern": "Modelin ismi",
         "Afficher": "Göster",

@@ -1,45 +1,58 @@
 {
-    "plugins/blink1/plugin_info/info.xml": {
-        "Plugin servant à piloter une clé blink(1).": "Plugin to control a blink(1) key",
-        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "You need to install Blink1Control software on a PC Windows or a Mac: https://github.com/todbot/blink1/releases and to activate API server with mode \"any\" in options menu"
+    "desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Pattern name (in API or URL mode) or command (in SSH or local mode)",
+        "Afficher": "Show",
+        "Tester": "Test"
     },
-    "plugins/blink1/desktop/php/blink1.php": {
-        "Ajouter une clé blink(1)": "Add blink(1) key",
+    "desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Ajouter une blink(1)": "Add a blink (1)",
         "Rechercher": "Search",
+        "Gestion": "Management",
+        "Configuration": "Configuration",
         "Mes clés blink(1)": "My blink(1) key",
+        "Sauvegarder": "Save",
+        "Supprimer": "Delete",
+        "Equipement": "Equipment",
+        "Commandes": "Commands",
         "Général": "Main",
         "Nom de l'équipement blink(1)": "Name of blink(1) device",
         "Objet parent": "Parent object",
         "Aucun": "None",
+        "Catégorie": "Category",
         "Activer": "Activate",
         "Visible": "Visible",
-        "Mode": "Mode",
+        "Mode": "Fashion",
         "Les deux": "Both",
         "Appels à l'API blink(1)": "Calls to Blink(1) API",
         "Surveillance par URL": "Monitoring by URL",
         "SSH": "SSH",
         "Local": "Local",
+        "Numéro de périphérique": "Device number",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Leave empty to use the first blink (1) found",
         "Adresse ou IP": "Address or IP",
-        "Port": "Port",
+        "Port": "Harbor",
         "Nom d'utilisateur": "Username",
+        "Chemin relatif de l'exécutable blink1-tool": "Relative path of the blink1-tool executable",
         "Ne pas répéter les commandes": "Don't repeat commands",
-        "Pattern": "Pattern",
+        "Pattern": "pattern",
         "Synchroniser": "Synchronize",
         "URL à surveiller": "URL to monitor",
-        "Commandes": "Commands",
-        "Ajouter une commande pattern": "Add a pattern command",
+        "Ajouter une commande": "Add an order",
         "Nom": "Name",
         "Type": "Type",
         "Paramètres": "Settings",
-        "Options": "Options",
-        "Action": "Action",
-        "Supprimer": "Delete",
-        "Sauvegarder": "Save"
+        "Options": "options",
+        "Action": "Action"
     },
-    "plugins/blink1/desktop/js/blink1.js": {
-        "Nom": "Name",
-        "Nom du pattern": "Name of pattern",
-        "Afficher": "Show",
-        "Tester": "Test"
+    "core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "404 - Equipement non trouvé : ": "404 - Equipment not found:",
+        "Aucune méthode correspondante à : ": "No method corresponding to:"
+    },
+    "core\/class\/blink1.class.php": {
+        "Couleur": "Color",
+        "$pattern['name']": "$ Pattern [ &#39;name&#39;]",
+        "Aucun exécutable trouvé pour l\\'architecture : ": "No executable found for architecture:"
     }
 }

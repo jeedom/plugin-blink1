@@ -1,42 +1,56 @@
 {
-    "plugins/blink1/plugin_info/info.xml": {
-        "Plugin servant à piloter une clé blink(1).": "Plugin para accionar una clave blink(1).",
-        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "Debe instalar en Windows o Mac del programa Blink1Control: https://github.com/todbot/blink1/releases y en las opciones activar en la API server el modo  \"any\""
+    "desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nombre del patrón (en modo API o URL) o comando (en modo SSH o local)",
+        "Afficher": "Mostrar",
+        "Tester": "Probar"
     },
-    "plugins/blink1/desktop/php/blink1.php": {
-        "Ajouter une clé blink(1)": "Añadir una clave blink(1)",
+    "desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Ajouter une blink(1)": "Agregar un parpadeo (1)",
         "Rechercher": "Buscar",
+        "Gestion": "administración",
+        "Configuration": "configuración",
         "Mes clés blink(1)": "Mis claves Blink(1)",
+        "Sauvegarder": "Guardar",
+        "Supprimer": "Borrar",
+        "Equipement": "equipo",
+        "Commandes": "Comandos",
         "Général": "Principal",
         "Nom de l'équipement blink(1)": "Nombre del dispositivo Blink(1)",
         "Objet parent": "Objeto padre",
         "Aucun": "Ningún",
+        "Catégorie": "categoría",
         "Activer": "Activar",
-        "Visible": "Visible",
+        "Visible": "visible",
         "Mode": "Modo",
         "Les deux": "Los dos",
         "Appels à l'API blink(1)": "Llamadas  a la API Blink(1)",
         "Surveillance par URL": "Vigilancia por Url ",
         "SSH": "SSH",
-        "Local": "Local",
+        "Local": "local",
+        "Numéro de périphérique": "Número de dispositivo",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Deje en blanco para usar el primer parpadeo (1) encontrado",
         "Adresse ou IP": "Dirección o IP",
         "Port": "Puerto",
         "Nom d'utilisateur": "Nombre de usuario",
+        "Chemin relatif de l'exécutable blink1-tool": "Ruta relativa del ejecutable blink1-tool",
         "Ne pas répéter les commandes": "No repetir los comandos",
-        "Pattern": "Pattern",
+        "Pattern": "patrón",
         "Synchroniser": "Sincronizar",
         "URL à surveiller": "URL a vigilar ",
-        "Commandes": "Comandos",
-        "Ajouter une commande pattern": "Añadir una orden pattern",
+        "Ajouter une commande": "Agregar un pedido",
         "Nom": "Nombre",
         "Type": "Tipo",
         "Paramètres": "Parámetros",
         "Options": "Opciones",
-        "Action": "Acción",
-        "Supprimer": "Borrar",
-        "Sauvegarder": "Guardar"
+        "Action": "Acción"
     },
-    "plugins/blink1/desktop/js/blink1.js": {
+    "core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "404 - Equipement non trouvé : ": "404 - Equipo no encontrado:",
+        "Aucune méthode correspondante à : ": "Ningún método correspondiente a:"
+    },
+    "core\/class\/blink1.class.php": {
         "Nom": "Nombre",
         "Nom du pattern": "Nombre del pattern",
         "Afficher": "Mostrar",

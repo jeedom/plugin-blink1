@@ -1,16 +1,25 @@
 {
-    "plugins/blink1/plugin_info/info.xml": {
-        "Plugin servant à piloter une clé blink(1).": "Плагин для управления blink(1).",
-        "Il faut installer sur un poste Windows ou Mac le logiciel Blink1Control : https://github.com/todbot/blink1/releases et dans les options activer l'API server en mode \"any\"": "На Windows или MacOS должно быть установлено ПО Blink1Control: https://github.com/todbot/blink1/releases и опция для активации API сервера в положении \"any\""
+    "desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
+        "Afficher": "Отобразить",
+        "Tester": "Тест"
     },
-    "plugins/blink1/desktop/php/blink1.php": {
-        "Ajouter une clé blink(1)": "Добавить мигающий blink(1)",
+    "desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Ajouter une blink(1)": "Ajouter une blink(1)",
         "Rechercher": "Искать",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
         "Mes clés blink(1)": "Мои мигающие blink(1)",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "Удалить",
+        "Equipement": "Equipement",
+        "Commandes": "Команды",
         "Général": "Главная",
         "Nom de l'équipement blink(1)": "Имя оборудования blink(1)",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
+        "Catégorie": "Catégorie",
         "Activer": "Активировать",
         "Visible": "Видимый",
         "Mode": "Режим",
@@ -19,24 +28,29 @@
         "Surveillance par URL": "URL наблюдения",
         "SSH": "SSH",
         "Local": "Локальный",
+        "Numéro de périphérique": "Numéro de périphérique",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Laisser vide pour utiliser le premier blink(1) trouvé",
         "Adresse ou IP": "IP адрес",
         "Port": "Порт",
         "Nom d'utilisateur": "Имя пользователя",
+        "Chemin relatif de l'exécutable blink1-tool": "Chemin relatif de l'exécutable blink1-tool",
         "Ne pas répéter les commandes": "Не повторяйте запросы",
         "Pattern": "Шаблон",
         "Synchroniser": "Синхронизировать",
         "URL à surveiller": "URL для просмотра",
-        "Commandes": "Команды",
-        "Ajouter une commande pattern": "Добавить шаблон команды",
+        "Ajouter une commande": "Ajouter une commande",
         "Nom": "Имя",
         "Type": "Тип",
         "Paramètres": "Параметры",
         "Options": "Опции",
-        "Action": "Действие",
-        "Supprimer": "Удалить",
-        "Sauvegarder": "Сохранить"
+        "Action": "Действие"
     },
-    "plugins/blink1/desktop/js/blink1.js": {
+    "core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "404 - Equipement non trouvé : ": "404 - Equipement non trouvé : ",
+        "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
+    },
+    "core\/class\/blink1.class.php": {
         "Nom": "Имя",
         "Nom du pattern": "Имя шаблона",
         "Afficher": "Отобразить",
