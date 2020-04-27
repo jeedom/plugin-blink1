@@ -1,59 +1,58 @@
 {
-    "desktop\/js\/blink1.js": {
-        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
-        "Afficher": "Göster",
-        "Tester": "Dene"
-    },
-    "desktop\/php\/blink1.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Ajouter une blink(1)": "Ajouter une blink(1)",
+    "plugins\/blink1\/desktop\/php\/blink1.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Ajouter une blink(1)": "",
         "Rechercher": "Arayın",
-        "Gestion": "Gestion",
-        "Configuration": "Configuration",
-        "Mes clés blink(1)": "blink(1) anahatarlarım",
+        "Gestion": "Idare",
+        "Configuration": "Ayar",
+        "Mes clés blink(1)": "",
         "Sauvegarder": "Kaydet",
         "Supprimer": "Sil",
-        "Equipement": "Equipement",
+        "Equipement": "Cihaz",
         "Commandes": "Komutalar",
         "Général": "Genel",
-        "Nom de l'équipement blink(1)": "Blink(1) cihazının ismi",
+        "Nom de l'équipement blink(1)": "",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
-        "Catégorie": "Catégorie",
-        "Activer": "Etkinleştirmek",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştir",
         "Visible": "Görülebilir",
-        "Mode": "Mod",
+        "Mode": "",
         "Les deux": "İkiside",
-        "Appels à l'API blink(1)": "blink(1) API a çağrı",
-        "Surveillance par URL": "URL den gözetim",
-        "SSH": "SSH",
+        "Appels à l'API blink(1)": "",
+        "Surveillance par URL": "",
+        "SSH": "",
         "Local": "Yerel",
-        "Numéro de périphérique": "Numéro de périphérique",
-        "Laisser vide pour utiliser le premier blink(1) trouvé": "Laisser vide pour utiliser le premier blink(1) trouvé",
-        "Adresse ou IP": "Adres yada IP",
-        "Port": "Port",
+        "Numéro de périphérique": "",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "",
+        "Adresse ou IP": "",
+        "Port": "",
         "Nom d'utilisateur": "Kullanıcı adı ",
-        "Chemin relatif de l'exécutable blink1-tool": "Chemin relatif de l'exécutable blink1-tool",
-        "Ne pas répéter les commandes": "Komutaları tekraklamayın",
-        "Pattern": "Model",
-        "Synchroniser": "Senkeronize et",
-        "URL à surveiller": "Gözetimesi gereken URL",
-        "Ajouter une commande": "Ajouter une commande",
+        "Chemin relatif de l'exécutable blink1-tool": "",
+        "Ne pas répéter les commandes": "",
+        "Pattern": "",
+        "Synchroniser": "",
+        "URL à surveiller": "",
+        "Ajouter une commande": "Komuta ekle",
         "Nom": "İsim",
-        "Type": "Ceşit",
+        "Type": "Çeşit",
         "Paramètres": "Ayarlar ( Séçenekler )",
         "Options": "Opsiyonlar",
-        "Action": "Etki"
+        "Action": "Eylem"
     },
-    "core\/ajax\/blink1.ajax.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "404 - Equipement non trouvé : ": "404 - Equipement non trouvé : ",
-        "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
-    },
-    "core\/class\/blink1.class.php": {
-        "Nom": "İsim",
-        "Nom du pattern": "Modelin ismi",
+    "plugins\/blink1\/desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "",
         "Afficher": "Göster",
-        "Tester": "Dene"
+        "Tester": "Test et"
+    },
+    "plugins\/blink1\/core\/ajax\/blink1.ajax.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "404 - Equipement non trouvé : ": "",
+        "Aucune méthode correspondante à : ": "Aşağıdakilere karşılık gelen bir yöntem yok:"
+    },
+    "plugins\/blink1\/core\/class\/blink1.class.php": {
+        "Couleur": "Renk",
+        "$pattern['name']": "",
+        "Aucun exécutable trouvé pour l\\'architecture : ": ""
     }
 }

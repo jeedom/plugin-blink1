@@ -1,22 +1,17 @@
 {
-    "desktop\/js\/blink1.js": {
-        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Pattern name (in API or URL mode) or command (in SSH or local mode)",
-        "Afficher": "Show",
-        "Tester": "Test"
-    },
-    "desktop\/php\/blink1.php": {
+    "plugins\/blink1\/desktop\/php\/blink1.php": {
         "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Ajouter une blink(1)": "Add a blink (1)",
+        "Ajouter une blink(1)": "",
         "Rechercher": "Search",
         "Gestion": "Management",
-        "Configuration": "Configuration",
-        "Mes clés blink(1)": "My blink(1) key",
+        "Configuration": "Setup",
+        "Mes clés blink(1)": "",
         "Sauvegarder": "Save",
         "Supprimer": "Delete",
         "Equipement": "Equipment",
         "Commandes": "Commands",
         "Général": "Main",
-        "Nom de l'équipement blink(1)": "Name of blink(1) device",
+        "Nom de l'équipement blink(1)": "",
         "Objet parent": "Parent object",
         "Aucun": "None",
         "Catégorie": "Category",
@@ -24,35 +19,40 @@
         "Visible": "Visible",
         "Mode": "Fashion",
         "Les deux": "Both",
-        "Appels à l'API blink(1)": "Calls to Blink(1) API",
-        "Surveillance par URL": "Monitoring by URL",
-        "SSH": "SSH",
+        "Appels à l'API blink(1)": "",
+        "Surveillance par URL": "",
+        "SSH": "",
         "Local": "Local",
-        "Numéro de périphérique": "Device number",
-        "Laisser vide pour utiliser le premier blink(1) trouvé": "Leave empty to use the first blink (1) found",
-        "Adresse ou IP": "Address or IP",
-        "Port": "Harbor",
+        "Numéro de périphérique": "",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "",
+        "Adresse ou IP": "",
+        "Port": "Port",
         "Nom d'utilisateur": "Username",
-        "Chemin relatif de l'exécutable blink1-tool": "Relative path of the blink1-tool executable",
-        "Ne pas répéter les commandes": "Don't repeat commands",
-        "Pattern": "pattern",
+        "Chemin relatif de l'exécutable blink1-tool": "",
+        "Ne pas répéter les commandes": "",
+        "Pattern": "",
         "Synchroniser": "Synchronize",
-        "URL à surveiller": "URL to monitor",
-        "Ajouter une commande": "Add an order",
+        "URL à surveiller": "",
+        "Ajouter une commande": "Add a command",
         "Nom": "Name",
         "Type": "Type",
         "Paramètres": "Settings",
-        "Options": "options",
+        "Options": "Options",
         "Action": "Action"
     },
-    "core\/ajax\/blink1.ajax.php": {
+    "plugins\/blink1\/desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "",
+        "Afficher": "Show",
+        "Tester": "Test"
+    },
+    "plugins\/blink1\/core\/ajax\/blink1.ajax.php": {
         "401 - Accès non autorisé": "401 - Unauthorized access",
-        "404 - Equipement non trouvé : ": "404 - Equipment not found:",
+        "404 - Equipement non trouvé : ": "",
         "Aucune méthode correspondante à : ": "No method corresponding to:"
     },
-    "core\/class\/blink1.class.php": {
+    "plugins\/blink1\/core\/class\/blink1.class.php": {
         "Couleur": "Color",
-        "$pattern['name']": "$ Pattern [ &#39;name&#39;]",
-        "Aucun exécutable trouvé pour l\\'architecture : ": "No executable found for architecture:"
+        "$pattern['name']": "",
+        "Aucun exécutable trouvé pour l\\'architecture : ": ""
     }
 }

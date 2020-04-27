@@ -1,10 +1,5 @@
 {
-    "desktop\/js\/blink1.js": {
-        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
-        "Afficher": "Afficher",
-        "Tester": "Tester"
-    },
-    "desktop\/php\/blink1.php": {
+    "plugins\/blink1\/desktop\/php\/blink1.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Ajouter une blink(1)": "Ajouter une blink(1)",
         "Rechercher": "Rechercher",
@@ -45,12 +40,17 @@
         "Options": "Options",
         "Action": "Action"
     },
-    "core\/ajax\/blink1.ajax.php": {
+    "plugins\/blink1\/desktop\/js\/blink1.js": {
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)",
+        "Afficher": "Afficher",
+        "Tester": "Tester"
+    },
+    "plugins\/blink1\/core\/ajax\/blink1.ajax.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "404 - Equipement non trouvé : ": "404 - Equipement non trouvé : ",
         "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
     },
-    "core\/class\/blink1.class.php": {
+    "plugins\/blink1\/core\/class\/blink1.class.php": {
         "Couleur": "Couleur",
         "$pattern['name']": "$pattern['name']",
         "Aucun exécutable trouvé pour l\\'architecture : ": "Aucun exécutable trouvé pour l\\'architecture : "
