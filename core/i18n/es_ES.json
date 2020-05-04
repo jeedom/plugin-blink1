@@ -1,17 +1,17 @@
 {
     "plugins\/blink1\/desktop\/php\/blink1.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
-        "Ajouter une blink(1)": "",
+        "Ajouter une blink(1)": "Agregar un parpadeo (1)",
         "Rechercher": "Buscar",
         "Gestion": "Gestión",
         "Configuration": "Configuración",
-        "Mes clés blink(1)": "",
+        "Mes clés blink(1)": "Mis teclas parpadeantes (1)",
         "Sauvegarder": "Guardar",
         "Supprimer": "Borrar",
         "Equipement": "Dispositivos",
         "Commandes": "Comandos",
         "Général": "Principal",
-        "Nom de l'équipement blink(1)": "",
+        "Nom de l'équipement blink(1)": "Nombre del equipo de parpadeo (1)",
         "Objet parent": "Objeto padre",
         "Aucun": "Ninguna",
         "Catégorie": "Categoría",
@@ -19,20 +19,20 @@
         "Visible": "Visible",
         "Mode": "Modo",
         "Les deux": "Los dos",
-        "Appels à l'API blink(1)": "",
-        "Surveillance par URL": "",
-        "SSH": "",
+        "Appels à l'API blink(1)": "Llamadas API de parpadeo (1)",
+        "Surveillance par URL": "Monitoreo de URL",
+        "SSH": "SSH",
         "Local": "Local",
-        "Numéro de périphérique": "",
-        "Laisser vide pour utiliser le premier blink(1) trouvé": "",
-        "Adresse ou IP": "",
+        "Numéro de périphérique": "Número de dispositivo",
+        "Laisser vide pour utiliser le premier blink(1) trouvé": "Deje en blanco para usar el primer parpadeo (1) encontrado",
+        "Adresse ou IP": "Dirección o IP",
         "Port": "Puerto",
         "Nom d'utilisateur": "Nombre de usuario",
-        "Chemin relatif de l'exécutable blink1-tool": "",
-        "Ne pas répéter les commandes": "",
+        "Chemin relatif de l'exécutable blink1-tool": "Ruta relativa del ejecutable blink1-tool",
+        "Ne pas répéter les commandes": "No repetir comandos",
         "Pattern": "Patrón",
         "Synchroniser": "Sincronizar",
-        "URL à surveiller": "",
+        "URL à surveiller": "Url para mirar",
         "Ajouter une commande": "Añadir una orden",
         "Nom": "Nombre",
         "Type": "Tipo",
@@ -41,18 +41,18 @@
         "Action": "Acción"
     },
     "plugins\/blink1\/desktop\/js\/blink1.js": {
-        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "",
+        "Nom du pattern (en mode API ou URL) ou commande (en mode SSH ou local)": "Nombre del patrón (en modo API o URL) o comando (en modo SSH o local)",
         "Afficher": "Mostrar",
         "Tester": "Probar"
     },
     "plugins\/blink1\/core\/ajax\/blink1.ajax.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
-        "404 - Equipement non trouvé : ": "",
+        "404 - Equipement non trouvé : ": "404 - Equipo no encontrado:",
         "Aucune méthode correspondante à : ": "Ningún método correspondiente a:"
     },
     "plugins\/blink1\/core\/class\/blink1.class.php": {
         "Couleur": "Color",
-        "$pattern['name']": "",
-        "Aucun exécutable trouvé pour l\\'architecture : ": ""
+        "$pattern['name']": "$ patrón ['nombre']",
+        "Aucun exécutable trouvé pour l\\'architecture : ": "No se encontró ejecutable para la arquitectura:"
     }
 }
