@@ -48,7 +48,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Modo** : el modo en el que desea operar
     su parpadeo (1) (consulte la descripción a continuación)
 
-A continuación encontrará la lista de pedidos. :
+A continuación encontrará la lista de pedidos :
 
 -   el nombre que se muestra en el tablero
 
@@ -56,7 +56,7 @@ A continuación encontrará la lista de pedidos. :
 
 -   el valor : permite dar el valor del pedido según
     otro comando, una tecla (caso de un interruptor virtual),
-    de un cálculo ....
+    de un cálculo.
 
 -   Configuraciones : nombre del patrón para iniciar o del comando para iniciar
 
@@ -113,7 +113,7 @@ Una vez instalado y lanzado debe tener :
 
 ![blink7](../images/blink7.png)
 
-Esta aplicación ofrece muchas posibilidades.. Rápidamente nosotros
+Esta aplicación ofrece muchas posibilidades. Rápidamente nosotros
 encuentre en la parte superior izquierda el estado de la clave (aquí no conectado), debajo
 eventos a la izquierda, en la parte superior en el centro de acciones rápidas para
 controlar la tecla, justo debajo de un sistema de selección de modo avanzado
@@ -188,7 +188,7 @@ sencillo :
 
 > **Punta**
 >
-> El ejecutable está disponible.
+> El ejecutable está disponible
 > [aquí](https://github.com/todbot/blink1/releases), ten cuidado Jeedom no
 > solo funciona con la versión de Linux, que por supuesto es compatible
 > que con una máquina tipo Linux (rpi, rpi2, jeedomboard, cubieboard,

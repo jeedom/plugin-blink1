@@ -48,7 +48,7 @@
     "plugins\/blink1\/core\/ajax\/blink1.ajax.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
         "404 - Equipement non trouvé : ": "404 - Equipamento não encontrado:",
-        "Aucune méthode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune méthode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/blink1\/core\/class\/blink1.class.php": {
         "Couleur": "Cor",
