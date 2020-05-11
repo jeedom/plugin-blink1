@@ -28,7 +28,7 @@ equipamento) :
 
 ![blink4](../images/blink4.png)
 
-> **Tip**
+> **Dica**
 >
 > Como em muitos lugares em Jeedom, coloque o mouse na extremidade esquerda
 > abre um menu de acesso rápido (você pode
@@ -41,11 +41,11 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Objeto pai** : indica o objeto pai ao qual pertence
     o equipamento
 
--   **Activer** : torna seu equipamento ativo
+-   **Ativar** : torna seu equipamento ativo
 
--   **Visible** : torna visível no painel
+-   **Visivél** : torna visível no painel
 
--   **Mode** : o modo em que você deseja operar
+-   **Modo** : o modo em que você deseja operar
     seu piscar (1) (veja a descrição abaixo)
 
 Abaixo você encontra a lista de pedidos :
@@ -93,9 +93,9 @@ Neste modo, os parâmetros de configuração são :
 
 -   **Endereço ou IP** : endereço ou ip em que a tecla intermitente (1) está instalada
 
--   **Port** : porta na qual o aplicativo blink1control está escutando
+-   **Porta** : porta na qual o aplicativo blink1control está escutando
 
--   **Pattern** : permite sincronizar os padrões com os de
+-   **Padrão** : permite sincronizar os padrões com os de
     app blink1control
 
 Instalação do aplicativo blink1control 
@@ -141,7 +141,7 @@ ferramentas, clique no pequeno extra (+) para adicionar um,
 crie URL e copie o URL fornecido pelo Jeedom (campos de URL a serem observados)
 no caminho. Você também pode configurar a frequência de atualização.
 
-> **Important**
+> **IMPORTANTE**
 >
 > Para que isso funcione, o PC no qual o blink1control está instalado
 > pode acessar o Jeedom. Se você usa um laptop fora
@@ -186,7 +186,7 @@ simples :
 -   **Caminho relativo do executável blink1-tool** : caminho relativo para
     o executável blink1-tool
 
-> **Tip**
+> **Dica**
 >
 > O executável está disponível
 > [aqui](https://github.com/todbot/blink1/releases), tenha cuidado Jeedom não
@@ -196,7 +196,7 @@ simples :
 > está conectado à chave e o torna executável (chmod + x
 > blink1-tool)
 
-> **Important**
+> **IMPORTANTE**
 >
 > Para que isso funcione, você deve ter implementado no nível SSH
 > a troca de chaves RSA para que o Jeedom possa se conectar ao

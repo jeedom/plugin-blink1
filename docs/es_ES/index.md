@@ -28,7 +28,7 @@ Así es como se ve la página de configuración para un dispositivo de parpadeo 
 
 ![blink4](../images/blink4.png)
 
-> **Tip**
+> **Punta**
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > abre un menú de acceso rápido (puedes
@@ -41,11 +41,11 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo
 
--   **Activer** : activa su equipo
+-   **Activar** : activa su equipo
 
 -   **Visible** : lo hace visible en el tablero
 
--   **Mode** : el modo en el que desea operar
+-   **Modo** : el modo en el que desea operar
     su parpadeo (1) (consulte la descripción a continuación)
 
 A continuación encontrará la lista de pedidos. :
@@ -93,9 +93,9 @@ En este modo, los parámetros de configuración son :
 
 -   **Dirección o IP** : dirección o ip donde está instalada la tecla de parpadeo (1)
 
--   **Port** : puerto en el que escucha la aplicación blink1control
+-   **Puerto** : puerto en el que escucha la aplicación blink1control
 
--   **Pattern** : permite sincronizar los patrones con los de
+-   **Patrón** : permite sincronizar los patrones con los de
     aplicación blink1control
 
 Instalación de la aplicación blink1control 
@@ -141,7 +141,7 @@ herramientas, luego haga clic en el pequeño extra (+) para agregar uno, luego
 crear URL y copiar la URL dada por Jeedom (campos URL para ver)
 en el camino. También puedes configurar la frecuencia de actualización.
 
-> **Important**
+> **Importante**
 >
 > Para que esto funcione, la PC en la que está instalado blink1control
 > puede acceder a Jeedom. Si usa una computadora portátil afuera
@@ -186,7 +186,7 @@ sencillo :
 -   **Ruta relativa del ejecutable blink1-tool** : camino relativo a
     el ejecutable de la herramienta blink1
 
-> **Tip**
+> **Punta**
 >
 > El ejecutable está disponible.
 > [aquí](https://github.com/todbot/blink1/releases), ten cuidado Jeedom no
@@ -196,7 +196,7 @@ sencillo :
 > está enchufado en la clave y lo hace ejecutable (chmod + x
 > blink1-tool)
 
-> **Important**
+> **Importante**
 >
 > Para que esto funcione, debe haber implementado a nivel SSH
 > el intercambio de claves RSA para que Jeedom pueda conectarse al

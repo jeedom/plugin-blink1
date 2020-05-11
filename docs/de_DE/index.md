@@ -28,7 +28,7 @@ So sieht die Konfigurationsseite für ein Blinkgerät aus (1)
 
 ![blink4](../images/blink4.png)
 
-> **Tip**
+> **Spitze**
 >
 > Setzen Sie die Maus wie an vielen Stellen auf Jeedom ganz links
 > ruft ein Schnellzugriffsmenü auf (Sie können
@@ -41,11 +41,11 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Übergeordnetes Objekt** : gibt das übergeordnete Objekt an, zu dem es gehört
     Ausrüstung
 
--   **Activer** : macht Ihre Ausrüstung aktiv
+-   **Aktivieren** : macht Ihre Ausrüstung aktiv
 
--   **Visible** : macht es auf dem Dashboard sichtbar
+-   **Sichtbar** : macht es auf dem Dashboard sichtbar
 
--   **Mode** : den Modus, in dem Sie arbeiten möchten
+-   **Modus** : den Modus, in dem Sie arbeiten möchten
     Ihr Blinken (1) (Beschreibung siehe unten)
 
 Nachfolgend finden Sie die Liste der Bestellungen :
@@ -93,9 +93,9 @@ In diesem Modus sind die Konfigurationsparameter :
 
 -   **Adresse oder IP** : Adresse oder IP, an der der Blinkschlüssel (1) installiert ist
 
--   **Port** : Port, an dem die Anwendung blink1control empfangsbereit ist
+-   **Hafen** : Port, an dem die Anwendung blink1control empfangsbereit ist
 
--   **Pattern** : ermöglicht es, die Muster mit denen von zu synchronisieren
+-   **Muster** : ermöglicht es, die Muster mit denen von zu synchronisieren
     blink1control App
 
 Installation der Anwendung blink1control 
@@ -141,7 +141,7 @@ Klicken Sie dann auf das kleine Extra (+), um eines hinzuzufügen
 URL erstellen und die von Jeedom angegebene URL kopieren (zu beobachtende URL-Felder)
 auf dem Weg. Sie können auch die Aktualisierungshäufigkeit konfigurieren.
 
-> **Important**
+> **Wichtig**
 >
 > Damit dies funktioniert, muss der PC, auf dem blink1control installiert ist
 > kann auf Jeedom zugreifen. Wenn Sie draußen einen Laptop benutzen
@@ -186,7 +186,7 @@ einfach :
 -   **Relativer Pfad der ausführbaren Datei des blink1-Tools** : relativer Weg zu
     die ausführbare Datei blink1-tool
 
-> **Tip**
+> **Spitze**
 >
 > Die ausführbare Datei ist verfügbar
 > [hier](https://github.com/todbot/blink1/releases), Sei vorsichtig, Jeedom, tu es nicht
@@ -196,7 +196,7 @@ einfach :
 > ist in den Schlüssel eingesteckt und macht ihn ausführbar (chmod + x
 > blink1-tool)
 
-> **Important**
+> **Wichtig**
 >
 > Damit dies funktioniert, müssen Sie auf SSH-Ebene implementiert haben
 > den Austausch von RSA-Schlüsseln, damit Jeedom eine Verbindung zum herstellen kann

@@ -41,11 +41,11 @@ Here you find all the configuration of your equipment :
 -   **Parent object** : indicates the parent object to which belongs
     equipment
 
--   **Activer** : makes your equipment active
+-   **Activate** : makes your equipment active
 
 -   **Visible** : makes it visible on the dashboard
 
--   **Mode** : the mode in which you want to operate
+-   **Fashion** : the mode in which you want to operate
     your blink (1) (see below for description)
 
 Below you find the list of orders :
@@ -75,12 +75,12 @@ Below you find the list of orders :
 
 ![blink5](../images/blink5.png)
 
-Fashion to use if the blink (1) is connected to one of the USB ports of
+Mode to use if the blink (1) is connected to one of the USB ports of
 Jeedom. The only parameter in this mode is not mandatory and allows to
 select a blink (1) in particular if you have more than one
 trendy.
 
-Blink API Calls Fashion (1)" 
+Blink API Calls Mode (1)" 
 ------------------------------
 
 ![blink6](../images/blink6.png)
@@ -106,7 +106,7 @@ The blink1control app can be found
 it is available for windows and mac. Once downloaded, launch
 installing the application.
 
-Setup of the blink1control application 
+Configuration of the blink1control application 
 --------------------------------------------
 
 Once installed and launched you must have :
