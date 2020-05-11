@@ -1,203 +1,118 @@
-Descripción 
-===========
+# Complemento de parpadeo (1)
 
 Complemento utilizado para controlar una tecla de parpadeo (1).
 
-Configuración 
-=============
+# Configuración 
 
 El complemento no requiere ninguna configuración, solo tiene que activarlo :
 
 ![blink1](../images/blink1.png)
 
-Configuración del equipo 
-=============================
+# Configuración del equipo 
 
-Se puede acceder a la configuración de los dispositivos de parpadeo (1) desde
-Menú de complementos :
+Se puede acceder a la configuración de dispositivos de parpadeo (1) desde el menú Complementos :
 
 ![blink2](../images/blink2.png)
 
-Así es como se ve la página del complemento blink (1) (aquí con un
-equipos) :
+Así es como se ve la página del complemento blink (1) (aquí ya con el equipo) :
 
 ![blink3](../images/blink3.png)
 
-Así es como se ve la página de configuración para un dispositivo de parpadeo (1)
-:
+Así es como se ve la página de configuración para un dispositivo de parpadeo (1) :
 
 ![blink4](../images/blink4.png)
-
-> **Punta**
->
-> Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
-> abre un menú de acceso rápido (puedes
-> desde tu perfil siempre déjalo visible).
 
 Aquí encontrarás toda la configuración de tu equipo :
 
 -   **Nombre del equipo de parpadeo (1)** : nombre de su equipo de parpadeo (1)
-
--   **Objeto padre** : indica el objeto padre al que pertenece
-    equipo
-
+-   **Objeto padre** : indica el objeto padre al que pertenece el equipo
 -   **Activar** : activa su equipo
-
 -   **Visible** : lo hace visible en el tablero
-
--   **Modo** : el modo en el que desea operar
-    su parpadeo (1) (consulte la descripción a continuación)
+-   **Modo** : el modo en el que desea operar su parpadeo (1) (consulte la descripción a continuación)
 
 A continuación encontrará la lista de pedidos :
 
 -   el nombre que se muestra en el tablero
-
 -   tipo y subtipo
-
--   el valor : permite dar el valor del pedido según
-    otro comando, una tecla (caso de un interruptor virtual),
-    de un cálculo.
-
+-   el valor : permite dar el valor del comando de acuerdo con otro comando, una tecla (caso de un interruptor virtual), un cálculo.
 -   Configuraciones : nombre del patrón para iniciar o del comando para iniciar
-
 -   Mostrar : permite mostrar los datos en el tablero
-
--   configuración avanzada (ruedas con muescas pequeñas) : Muestra
-    La configuración avanzada del comando (método
-    historia, widget ...)
+-   configuración avanzada (ruedas con muescas pequeñas) : muestra la configuración avanzada del comando (método de registro, widget, etc.)
 
 -   Probar : Se usa para probar el comando
-
 -   eliminar (firmar -) : permite eliminar el comando
 
-Modo "Local"" 
-============
+# Modo "Local"" 
 
 ![blink5](../images/blink5.png)
 
-Modo a utilizar si el parpadeo (1) está conectado a uno de los puertos USB de
-Jeedom El único parámetro en este modo no es obligatorio y permite
-seleccione un parpadeo (1) en particular si tiene más de uno
-de moda.
+Modo para usar si el parpadeo (1) está conectado a uno de los puertos USB de Jeedom. El único parámetro en este modo no es obligatorio y le permite seleccionar un parpadeo (1) en particular si tiene varios conectados.
 
-Modo de llamadas API parpadeante (1)" 
-------------------------------
+# Modo de llamadas API parpadeante (1)" 
 
 ![blink6](../images/blink6.png)
 
-En este modo, Jeedom llamará directamente a la API blink1control, se
-Por lo tanto, Jeedom debe poder unirse directamente al sistema en el que
-la tecla de parpadeo (1) está instalada.
+En este modo, Jeedom llamará directamente a la API blink1control, por lo que Jeedom debe poder unirse directamente al sistema en el que está instalada la tecla blink (1).
 
 En este modo, los parámetros de configuración son :
 
 -   **Dirección o IP** : dirección o ip donde está instalada la tecla de parpadeo (1)
-
 -   **Puerto** : puerto en el que escucha la aplicación blink1control
+-   **Patrón** : permite sincronizar los patrones con los de la aplicación blink1control
 
--   **Patrón** : permite sincronizar los patrones con los de
-    aplicación blink1control
+## Instalación de la aplicación blink1control 
 
-Instalación de la aplicación blink1control 
--------------------------------------------
+La aplicación blink1control se puede encontrar [aquí](http://blink1.thingm.com/blink1control/), en la parte de descarga, está disponible para Windows y Mac. Una vez descargado, inicie la instalación de la aplicación.
 
-La aplicación blink1control se puede encontrar
-[aquí](http://blink1.thingm.com/blink1control/), en la sección de descargas,
-Está disponible para Windows y Mac. Una vez descargado, inicie
-instalar la aplicación.
-
-Configuración de la aplicación blink1control 
---------------------------------------------
+## Configuración de la aplicación blink1control 
 
 Una vez instalado y lanzado debe tener :
 
 ![blink7](../images/blink7.png)
 
-Esta aplicación ofrece muchas posibilidades. Rápidamente nosotros
-encuentre en la parte superior izquierda el estado de la clave (aquí no conectado), debajo
-eventos a la izquierda, en la parte superior en el centro de acciones rápidas para
-controlar la tecla, justo debajo de un sistema de selección de modo avanzado
-y colores, y a la derecha los patrones.
+Esta aplicación ofrece muchas posibilidades. Rápidamente encontramos en la parte superior izquierda el estado de la tecla (aquí no conectado), en la parte inferior izquierda los eventos, en el centro superior de las acciones rápidas para controlar la tecla, justo debajo de un sistema avanzado de elección de modos y colores. y a la derecha los patrones.
 
-Una vez allí, haga clic en la pequeña rueda dentada en el dispositivo para
-abrir el menú de configuración avanzada y activar la API
-servidor, poniendo serverHost en cualquier. También tenga en cuenta el puerto para el
-informe en la configuración de Jeedom.
+Una vez allí, debe hacer clic en la pequeña rueda con muescas en el dispositivo para abrir el menú de configuración avanzada y activar la API del servidor, colocando serverHost en cualquier. También tenga en cuenta el puerto para informarlo en la configuración de Jeedom.
 
 ![blink8](../images/blink8.png)
 
 Valide y reinicie blink1control para que lo tenga en cuenta.
 
-"Modo de monitoreo de URL" 
-===========================
+# "Modo de monitoreo de URL" 
 
 ![blink9](../images/blink9.png)
 
-En este modo, es la aplicación blink1control la que llama a todos los X
-segundos esta URL que le dará sus instrucciones.
+En este modo, es la aplicación blink1control la que llama a esta URL cada X segundos y le dará sus instrucciones.
 
-Para configurarlo, en la aplicación blink1control vaya a
-herramientas, luego haga clic en el pequeño extra (+) para agregar uno, luego
-crear URL y copiar la URL dada por Jeedom (campos URL para ver)
-en el camino. También puedes configurar la frecuencia de actualización.
+Para configurarlo, en la aplicación blink1control, vaya a herramientas, luego haga clic en el pequeño más (+) para agregar uno, luego cree la URL y copie la URL dada por Jeedom (campos de URL para ver) en la ruta. También puedes configurar la frecuencia de actualización.
 
 > **Importante**
 >
-> Para que esto funcione, la PC en la que está instalado blink1control
-> puede acceder a Jeedom. Si usa una computadora portátil afuera
-> de su red con la clave, por lo que Jeedom debe ser
-> accesible desde afuera. Si no sabes cómo,
-> mejor es usar Jeedom DNS.
+> Para que esto funcione es necesario que la PC en la que blink1control pueda acceder a Jeedom. Si está utilizando una computadora portátil fuera de su red con la clave en ella, debe poder acceder a Jeedom desde afuera. Si no sabes cómo, lo mejor es usar Jeedom DNS.
 
-En este modo también tiene la opción "No repetir comandos"
-esto hace posible que ya no se repita el último comando una vez
-blink1control ha tenido en cuenta la solicitud. Es aconsejable
-dejar marcado.
+En este modo, también tiene la opción "No repetir comandos", esto le permite no repetir más el último comando una vez que blink1control haya tenido en cuenta la solicitud. Es recomendable dejarlo marcado.
 
-Modo "Ambos"" 
-===============
+# Modo "Ambos"" 
 
 ![blink11](../images/blink11.png)
 
-Este modo es una combinación de los 2 modos anteriores, la ventaja es
-que combina la velocidad de reacción de los primeros y la posibilidad de
-operar incluso fuera de la segunda casa. Para la
-configuración, siga los procedimientos para las "Llamadas a
-blink (1) API "y" Modo de monitoreo de URL".
+Este modo es una combinación de los 2 modos anteriores, la ventaja es que combina la velocidad de reacción del primero y la posibilidad de operarlo incluso fuera del segundo hogar. Por lo tanto, para la configuración es necesario seguir los procedimientos para el modo "Llamadas a la API de parpadeo (1)" y el modo "Monitoreo por URL".
 
-Modo SSH" 
-==========
+# Modo SSH" 
 
 ![blink12](../images/blink12.png)
 
-Este modo debe usarse si ha puesto el parpadeo (1) en una máquina
-Linux distinto del que está instalado Jeedom (Jeedom master porque el
-el complemento no es compatible en remoto). La configuración es bastante
-sencillo :
+Este modo debe usarse si ha colocado el parpadeo (1) en una máquina Linux distinta de la que está instalada Jeedom (Jeedom master porque el complemento no es compatible en modo remoto). La configuración es bastante simple :
 
--   **Número de dispositivo** : ID del dispositivo, para usar solo si
-    tiene varias teclas de parpadeo (1) en su máquina
-
+-   **Número de dispositivo** : ID del dispositivo, para usar solo si tiene varias teclas parpadeantes (1) en su máquina
 -   **Dirección o IP** : Dirección IP de la máquina donde está conectada la llave
-
--   **Nombre de usuario** : el nombre de usuario para iniciar sesión
-    la máquina donde está conectada la llave
-
--   **Ruta relativa del ejecutable blink1-tool** : camino relativo a
-    el ejecutable de la herramienta blink1
+-   **Nombre de usuario** : el nombre de usuario para iniciar sesión en la máquina donde está conectada la clave
+-   **Ruta relativa del ejecutable blink1-tool** : ruta relativa al ejecutable blink1-tool
 
 > **Punta**
 >
-> El ejecutable está disponible
-> [aquí](https://github.com/todbot/blink1/releases), ten cuidado Jeedom no
-> solo funciona con la versión de Linux, que por supuesto es compatible
-> que con una máquina tipo Linux (rpi, rpi2, jeedomboard, cubieboard,
-> bananapi ...). Simplemente transfiera el ejecutable a la máquina donde
-> está enchufado en la clave y lo hace ejecutable (chmod + x
-> blink1-tool)
+> El ejecutable está disponible [aquí](https://github.com/todbot/blink1/releases), cuidado, Jeedom solo funciona con la versión de Linux que, por supuesto, solo es compatible con una máquina de tipo Linux (rpi, rpi2, jeedomboard, cubieboard, bananapi ...). Simplemente transfiera el ejecutable a la máquina donde está conectada la clave y hágalo ejecutable (chmod + x blink1-tool)
 
 > **Importante**
 >
-> Para que esto funcione, debe haber implementado a nivel SSH
-> el intercambio de claves RSA para que Jeedom pueda conectarse al
-> máquina donde se conecta la llave sin proporcionar una contraseña.
+> Para que esto funcione, debe haber configurado en el nivel SSH el intercambio de la clave RSA para que Jeedom pueda conectarse a la máquina donde está conectada la clave sin proporcionar una contraseña.
