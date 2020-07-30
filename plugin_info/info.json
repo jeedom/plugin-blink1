@@ -7,5 +7,7 @@
     "require": "3.0",
     "category": "devicecommunication",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/blink1\/changelog",
-    "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/blink1\/"
+    "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/blink1\/",
+    "language" : ["fr_FR","en_US","de_DE","sp_SP"],
+"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
 }
