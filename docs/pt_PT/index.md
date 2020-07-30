@@ -14,21 +14,21 @@ A configuração dos dispositivos intermitentes (1) pode ser acessada no menu Pl
 
 ![blink2](../images/blink2.png)
 
-É assim que a página do plugin blink (1) se parece (aqui já com o equipamento) :
+É assim que a página do plug-in blink (1) se parece (aqui com uma) :
 
 ![blink3](../images/blink3.png)
 
-É assim que a página de configuração de um dispositivo intermitente se parece (1) :
+É assim que é a página de configuração de um dispositivo intermitente (1) :
 
 ![blink4](../images/blink4.png)
 
 Aqui você encontra toda a configuração do seu equipamento :
 
--   **Nome do equipamento intermitente (1)** : nome do seu equipamento de piscada (1)
+-   **Nome do dispositivo intermitente (1)** : nome do seu dispositivo intermitente (1)
 -   **Objeto pai** : indica o objeto pai ao qual o equipamento pertence
 -   **Ativar** : torna seu equipamento ativo
 -   **Visivél** : torna visível no painel
--   **Modo** : o modo em que você deseja operar o seu piscar de olhos (1) (veja a descrição abaixo)
+-   **Modo** : o modo em que você deseja operar o seu piscar de olhos (1) (veja abaixo a descrição)
 
 Abaixo você encontra a lista de pedidos :
 
@@ -37,10 +37,10 @@ Abaixo você encontra a lista de pedidos :
 -   o valor : permite atribuir o valor do comando de acordo com outro comando, uma chave (caso de um comutador virtual), um cálculo….
 -   Configurações : nome do padrão para ativar ou do comando para ativar
 -   Display : permite exibir os dados no painel
--   configuração avançada (pequenas rodas dentadas) : exibe a configuração avançada do comando (método de registro, widget etc.)
+-   Configuração avançada (pequenas rodas dentadas) : usado para exibir a configuração avançada do comando (método de log, widget, etc)
 
 -   Teste : permite testar o comando
--   excluir (assinar -) : permite excluir o comando
+-   Excluir (assinar -) : permite excluir o comando
 
 # Modo "Local"" 
 
@@ -48,7 +48,7 @@ Abaixo você encontra a lista de pedidos :
 
 Modo a ser usado se o piscar (1) estiver conectado a uma das portas USB da Jeedom. O único parâmetro neste modo não é obrigatório e permite selecionar um piscar de olhos (1) em particular se você tiver vários.
 
-# Modo de chamadas da API intermitente (1)" 
+# "Chamadas à API do Blink (1)" 
 
 ![blink6](../images/blink6.png)
 
@@ -102,7 +102,7 @@ Este modo é uma combinação dos 2 modos anteriores, a vantagem é que combina 
 
 ![blink12](../images/blink12.png)
 
-Esse modo deve ser usado se você colocou o piscar de olhos (1) em uma máquina Linux diferente daquela em que o Jeedom está instalado (Jeedom master porque o plug-in não é compatível no modo remoto). A configuração é bastante simples :
+Este modo deve ser usado se você colocou o piscar de olhos (1) em uma máquina Linux diferente daquela em que o Jeedom está instalado (Jeedom master, porque o plug-in não é compatível em computadores remotos)). A configuração é bastante simples :
 
 -   **Número do dispositivo** : ID do dispositivo, a ser usado apenas se você tiver várias teclas piscantes (1) em sua máquina
 -   **Endereço ou IP** : Endereço IP da máquina em que a chave está conectada
@@ -111,7 +111,7 @@ Esse modo deve ser usado se você colocou o piscar de olhos (1) em uma máquina 
 
 > **Dica**
 >
-> O executável está disponível [aqui](https://github.com/todbot/blink1/releases), cuidado, o Jeedom só funciona com a versão linux, que só é compatível com uma máquina do tipo linux (rpi, rpi2, jeedomboard, cubieboard, bananapi…). Basta transferir o executável para a máquina em que a chave está conectada e torná-lo executável (chmod + x blink1-tool)
+> O executável está disponível [aqui](https://github.com/todbot/blink1/releases), atenção O Jeedom só funciona com a versão linux, que só é compatível com uma máquina do tipo linux (rpi, rpi2, jeedomboard, cubieboard, bananapi). Tudo o que você precisa fazer é transferir o executável para a máquina em que a chave está conectada e torná-lo executável (chmod + x blink1-tool)
 
 > **IMPORTANTE**
 >

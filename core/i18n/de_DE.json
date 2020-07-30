@@ -54,5 +54,8 @@
         "Couleur": "Farbe",
         "$pattern['name']": "$ pattern ['name']",
         "Aucun exécutable trouvé pour l\\'architecture : ": "Keine ausführbare Datei für Architektur gefunden:"
+    },
+    "info.json": {
+        "Plugin servant à piloter une clé blink(1)": "Plugin zur Steuerung eines Blinkschlüssels (1)"
     }
 }

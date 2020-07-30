@@ -54,5 +54,8 @@
         "Couleur": "Couleur",
         "$pattern['name']": "$pattern['name']",
         "Aucun exécutable trouvé pour l\\'architecture : ": "Aucun exécutable trouvé pour l\\'architecture : "
+    },
+    "info.json": {
+        "Plugin servant à piloter une clé blink(1)": "Plugin servant à piloter une clé blink(1)"
     }
 }

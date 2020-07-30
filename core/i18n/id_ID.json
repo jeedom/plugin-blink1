@@ -54,5 +54,8 @@
         "Couleur": "Warna",
         "$pattern['name']": "",
         "Aucun exécutable trouvé pour l\\'architecture : ": ""
+    },
+    "info.json": {
+        "Plugin servant à piloter une clé blink(1)": ""
     }
 }

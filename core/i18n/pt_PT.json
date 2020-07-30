@@ -54,5 +54,8 @@
         "Couleur": "Cor",
         "$pattern['name']": "$ padrão ['nome']",
         "Aucun exécutable trouvé pour l\\'architecture : ": "Nenhum executável encontrado para arquitetura:"
+    },
+    "info.json": {
+        "Plugin servant à piloter une clé blink(1)": "Plugin usado para controlar uma tecla intermitente (1)"
     }
 }

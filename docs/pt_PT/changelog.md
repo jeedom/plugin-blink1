@@ -1,4 +1,4 @@
-# Registro de Mudanças (1)
+# Registro de Mudanças (1))
 
 >**IMPORTANTE**
 >

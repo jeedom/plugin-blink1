@@ -1,4 +1,4 @@
-# Blink Plugin (1)
+# Blink-Plugin (1)
 
 Plugin zur Steuerung eines Blinkschlüssels (1).
 
@@ -14,17 +14,17 @@ Die Konfiguration der Blinkgeräte (1) kann über das Plugins-Menü aufgerufen w
 
 ![blink2](../images/blink2.png)
 
-So sieht die Plugin-Seite blink (1) aus (hier bereits mit Ausrüstung) :
+So sieht die Plugin-Seite blink (1) aus (hier mit bereits a) :
 
 ![blink3](../images/blink3.png)
 
-So sieht die Konfigurationsseite für ein Blinkgerät aus (1) :
+So sieht die Konfigurationsseite eines Blinkgeräts aus (1) :
 
 ![blink4](../images/blink4.png)
 
 Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
--   **Name der Blinkausrüstung (1)** : Name Ihrer Blinkausrüstung (1)
+-   **Name des Blinkgeräts (1)** : Name Ihres Blinkgeräts (1)
 -   **Übergeordnetes Objekt** : Gibt das übergeordnete Objekt an, zu dem das Gerät gehört
 -   **Aktivieren** : macht Ihre Ausrüstung aktiv
 -   **Sichtbar** : macht es auf dem Dashboard sichtbar
@@ -37,10 +37,10 @@ Nachfolgend finden Sie die Liste der Bestellungen :
 -   der Wert : ermöglicht es, den Wert des Befehls gemäß einem anderen Befehl, einem Schlüssel (bei einem virtuellen Switch), einer Berechnung… anzugeben.
 -   Einstellungen : Name des zu startenden Musters oder des zu startenden Befehls
 -   Anzeige : ermöglicht die Anzeige der Daten im Dashboard
--   erweiterte Konfiguration (kleine gekerbte Räder) : Zeigt die erweiterte Konfiguration des Befehls an (Protokollierungsmethode, Widget usw.)
+-   Erweiterte Konfiguration (kleine gekerbte Räder) : Dient zum Anzeigen der erweiterten Konfiguration des Befehls (Protokollierungsmethode, Widget usw.))
 
 -   Test : Wird zum Testen des Befehls verwendet
--   löschen (unterschreiben -) : ermöglicht das Löschen des Befehls
+-   Löschen (unterschreiben -) : ermöglicht das Löschen des Befehls
 
 # "Lokaler" Modus" 
 
@@ -48,7 +48,7 @@ Nachfolgend finden Sie die Liste der Bestellungen :
 
 Zu verwendender Modus, wenn das Blinken (1) an einen der USB-Anschlüsse von Jeedom angeschlossen ist. Der einzige Parameter in diesem Modus ist nicht obligatorisch und ermöglicht die Auswahl eines Blinkens (1), insbesondere wenn mehrere verbunden sind.
 
-# Blink-API-Aufrufmodus (1)" 
+# "Blink-API-Aufrufe (1)" 
 
 ![blink6](../images/blink6.png)
 
@@ -102,7 +102,7 @@ Dieser Modus ist eine Kombination der beiden vorherigen Modi. Der Vorteil besteh
 
 ![blink12](../images/blink12.png)
 
-Dieser Modus muss verwendet werden, wenn Sie das Blinken (1) auf einem anderen Linux-Computer als dem installiert haben, auf dem Jeedom installiert ist (Jeedom Master, da das Plugin im Remote-Modus nicht kompatibel ist). Die Konfiguration ist recht einfach :
+Dieser Modus muss verwendet werden, wenn Sie das Blinken (1) auf einem anderen Linux-Computer als dem installiert haben, auf dem Jeedom installiert ist (Jeedom Master, da das Plugin nicht mit Remote kompatibel ist). Die Konfiguration ist recht einfach :
 
 -   **Gerätenummer** : Geräte-ID, die nur verwendet werden darf, wenn Sie mehrere Blinkschlüssel (1) auf Ihrem Computer haben
 -   **Adresse oder IP** : IP-Adresse des Geräts, an dem der Schlüssel angeschlossen ist
@@ -111,7 +111,7 @@ Dieser Modus muss verwendet werden, wenn Sie das Blinken (1) auf einem anderen L
 
 > **Spitze**
 >
-> Die ausführbare Datei ist verfügbar [hier](https://github.com/todbot/blink1/releases), Vorsicht Jeedom funktioniert nur mit der Linux-Version, die natürlich nur mit einer Linux-Maschine kompatibel ist (RPI, RPI2, Jeedomboard, Cubieboard, Bananapi…). Übertragen Sie die ausführbare Datei einfach auf den Computer, auf dem der Schlüssel eingesteckt ist, und machen Sie sie ausführbar (chmod + x blink1-tool)
+> Die ausführbare Datei ist verfügbar [hier](https://github.com/todbot/blink1/releases), Achtung Jeedom funktioniert nur mit der Linux-Version, die natürlich nur mit einer Linux-Maschine kompatibel ist (RPI, RPI2, Jeedomboard, Cubieboard, Bananapi). Sie müssen lediglich die ausführbare Datei auf den Computer übertragen, auf dem der Schlüssel angeschlossen ist, und sie ausführbar machen (chmod + x blink1-tool))
 
 > **Wichtig**
 >

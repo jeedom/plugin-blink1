@@ -14,17 +14,17 @@ The configuration of blink devices (1) is accessible from the Plugins menu :
 
 ![blink2](../images/blink2.png)
 
-This is what the blink (1) plugin page looks like (here already with equipment) :
+This is what the blink (1) plugin page looks like (here with already a) :
 
 ![blink3](../images/blink3.png)
 
-This is what the configuration page for a blink device looks like (1) :
+This is what the configuration page of a blink device looks like (1) :
 
 ![blink4](../images/blink4.png)
 
 Here you find all the configuration of your equipment :
 
--   **Name of the blink(1) equipment** : name of your blink equipment (1)
+-   **Name of the blink device (1)** : name of your blink device (1)
 -   **Parent object** : indicates the parent object to which the equipment belongs
 -   **Activate** : makes your equipment active
 -   **Visible** : makes it visible on the dashboard
@@ -37,10 +37,10 @@ Below you find the list of orders :
 -   the value : allows to give the value of the command according to another command, a key (case of a virtual switch), a calculation….
 -   Settings : name of the pattern to launch or of the command to launch
 -   Show : allows to display the data on the dashboard
--   advanced configuration (small notched wheels) : displays the advanced configuration of the command (logging method, widget, etc.)
+-   Advanced configuration (small notched wheels) : used to display the advanced configuration of the command (logging method, widget, etc)
 
 -   Test : Used to test the command
--   delete (sign -) : allows to delete the command
+-   Delete (sign -) : allows to delete the command
 
 # "Local" mode" 
 
@@ -48,7 +48,7 @@ Below you find the list of orders :
 
 Mode to use if the blink (1) is connected to one of Jeedom's USB ports. The only parameter in this mode is not mandatory and allows you to select a blink (1) in particular if you have several connected.
 
-# Blink API Calls Mode (1)" 
+# "Blink API calls (1)" 
 
 ![blink6](../images/blink6.png)
 
@@ -102,7 +102,7 @@ This mode is a combination of the 2 previous modes, the advantage is that it com
 
 ![blink12](../images/blink12.png)
 
-This mode must be used if you have put the blink (1) on a Linux machine other than the one where Jeedom is installed (Jeedom master because the plugin is not compatible in remote mode). The configuration is quite simple :
+This mode must be used if you have put the blink (1) on a linux machine other than the one where Jeedom is installed (Jeedom master because the plugin is not compatible in remote). The configuration is quite simple :
 
 -   **Device number** : Device ID, to be used only if you have several blink keys (1) on your machine
 -   **Address or IP** : IP address of the machine where the key is connected
@@ -111,7 +111,7 @@ This mode must be used if you have put the blink (1) on a Linux machine other th
 
 > **Tip**
 >
-> The executable is available [here](https://github.com/todbot/blink1/releases), beware Jeedom only works with the linux version which is of course only compatible with a linux type machine (rpi, rpi2, jeedomboard, cubieboard, bananapi…). Just transfer the executable to the machine where the key is plugged in, and make it executable (chmod + x blink1-tool)
+> The executable is available [here](https://github.com/todbot/blink1/releases), attention Jeedom only works with the linux version which is of course only compatible with a linux type machine (rpi, rpi2, jeedomboard, cubieboard, bananapi). All you have to do is transfer the executable to the machine where the key is connected, and make it executable (chmod + x blink1-tool)
 
 > **Important**
 >

@@ -1,4 +1,4 @@
-# Registro de cambios parpadeante (1)
+# Changelog Blink (1))
 
 >**Importante**
 >

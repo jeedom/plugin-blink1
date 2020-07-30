@@ -54,5 +54,8 @@
         "Couleur": "Color",
         "$pattern['name']": "$pattern['name']",
         "Aucun exécutable trouvé pour l\\'architecture : ": "No executable found for this arch"
+    },
+    "info.json": {
+        "Plugin servant à piloter une clé blink(1)": "Plugin used to control a blink key (1)"
     }
 }

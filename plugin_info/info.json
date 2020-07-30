@@ -1,13 +1,33 @@
 {
     "id": "blink1",
     "name": "Blink(1)",
-    "description": "Plugin servant à piloter une clé blink(1)",
+    "description": {
+        "fr_FR": "Plugin servant à piloter une clé blink(1)",
+        "en_US": "Plugin used to control a blink key (1)",
+        "es_ES": "Complemento utilizado para controlar una tecla de parpadeo (1)",
+        "de_DE": "Plugin zur Steuerung eines Blinkschlüssels (1)",
+        "pt_PT": "Plugin usado para controlar uma tecla intermitente (1)"
+    },
     "licence": "AGPL",
     "author": "Loïc",
     "require": "3.0",
     "category": "devicecommunication",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/blink1\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/blink1\/",
-    "language" : ["fr_FR","en_US","de_DE","sp_SP"],
-"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
+    "language": [
+        "fr_FR",
+        "en_US",
+        "es_ES",
+        "de_DE",
+        "pt_PT"
+    ],
+    "compatibility": [
+        "miniplus",
+        "smart",
+        "rpi",
+        "docker",
+        "diy",
+        "mobile",
+        "v4"
+    ]
 }
